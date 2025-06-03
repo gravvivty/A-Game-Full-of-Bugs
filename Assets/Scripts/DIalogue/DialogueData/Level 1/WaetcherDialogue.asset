@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: WaetcherDialogue
   m_EditorClassIdentifier: 
   dialogueLines:
-  - DialogueID: 0
+  - SpeakerName: Holder
+    DialogueID: 0
     Text: Was willst du, Dieter?
     Choices:
     - Text: "Beseite, W\xE4chter! Ich verlasse nun das K\xE4ferdorf."
@@ -24,12 +25,14 @@ MonoBehaviour:
       Conditions: []
     Conditions: []
     Rewards: []
-  - DialogueID: 0_c-1
+  - SpeakerName: Holder
+    DialogueID: 0_c-1
     Text: Vergiss es, Trottel. Du darfst nicht raus.
     Choices: []
     Conditions: []
     Rewards: []
-  - DialogueID: 0_c-2
+  - SpeakerName: Holder
+    DialogueID: 0_c-2
     Text: Na der Grille sei Dank.
     Choices: []
     Conditions: []

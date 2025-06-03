@@ -1094,7 +1094,9 @@ MonoBehaviour:
   player: {fileID: 1883518977}
   omi: {fileID: 1527529867}
   omi_noCurtain: {fileID: 396913690}
+  omi_panic_dialogueData: {fileID: 11400000, guid: 56c0d9940c9793e498ca367830a64f90, type: 2}
   guard: {fileID: 1134908520}
+  guard_panic_dialogueData: {fileID: 11400000, guid: 3c378e5fef8d8be40a1c096060d982c1, type: 2}
   villageDoor: {fileID: 1663037195}
   StaffAnim: {fileID: 9100000, guid: ae04e3965879ee24489a4e476883f102, type: 2}
 --- !u!4 &364316698
@@ -3813,6 +3815,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1449393251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1449393253}
+  - component: {fileID: 1449393252}
+  m_Layer: 0
+  m_Name: Reset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1449393252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449393251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eec1c04db421cc42a21af174bb8d4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1449393253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449393251}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2634164, y: 0.08805725, z: 0.055732843}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1489204278
 GameObject:
   m_ObjectHideFlags: 0
@@ -4592,6 +4638,14 @@ PrefabInstance:
       propertyPath: itemRepresentation
       value: 
       objectReference: {fileID: 11400000, guid: 13eff9e8621924c4faa97f791c4d5c80, type: 2}
+    - target: {fileID: 8494184591162785322, guid: 4a9053b0ce1212d459a30490105e7b7d, type: 3}
+      propertyPath: omi_panic_dialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: 56c0d9940c9793e498ca367830a64f90, type: 2}
+    - target: {fileID: 8494184591162785322, guid: 4a9053b0ce1212d459a30490105e7b7d, type: 3}
+      propertyPath: guard_panic_dialogueData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3c378e5fef8d8be40a1c096060d982c1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5388,3 +5442,4 @@ SceneRoots:
   - {fileID: 745056726}
   - {fileID: 665590460}
   - {fileID: 364316698}
+  - {fileID: 1449393253}

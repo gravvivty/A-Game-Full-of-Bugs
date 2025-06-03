@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40a767e4dc89c5745a5ebd6ea6ecaec4, type: 3}
-  m_Name: OmiNoCurtain
+  m_Name: GuardPanicDIalogue
   m_EditorClassIdentifier: 
   dialogueLines:
-  - DialogueID: 0
-    Text: "Sch\xF6nes Wetter haben wir."
+  - SpeakerName: Holder
+    DialogueID: 0
+    Text: "AUS DEM WEG ICH MUSS DAS FEUER L\xD6SCHEN!"
     Choices: []
     Conditions: []
     Rewards: []

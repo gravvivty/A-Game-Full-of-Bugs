@@ -10,8 +10,9 @@ namespace Project.Dialogue.Data
     [Serializable]
     public class DialogueLine
     {
+        public string SpeakerName;
         public string DialogueID;
-        public string Text;
+        [TextArea] public string Text;
         public List<DialogueChoice> Choices;
         public List<DialogueCondition> Conditions;
         public List<DialogueReward> Rewards;

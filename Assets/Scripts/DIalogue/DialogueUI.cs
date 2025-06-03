@@ -18,7 +18,7 @@ namespace Project.Dialogue
 
         public void DisplayDialogue(DialogueLine dialogue)
         {
-            dialogueText.text = dialogue.Text;
+            dialogueText.text = $"{dialogue.SpeakerName}: {dialogue.Text}";
             if (CheckConditions(dialogue.Conditions) == false)
             {
                 Debug.Log("Dialogue conditions not met, skipping dialogue.");
