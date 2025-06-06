@@ -2,6 +2,7 @@ using UnityEngine;
 using Project.Helper;
 using Project.Interactable;
 using Unity.VisualScripting;
+using UnityEngine.EventSystems;
 
 namespace Project.Player
 {
@@ -64,7 +65,7 @@ namespace Project.Player
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("GameObject hit: " + gameObjectHit?.name);
-                if (isGround)
+                if (isGround && !EventSystem.current.IsPointerOverGameObject())
                 {
                     Debug.Log("Clicked on ground: " + gameObjectHit.name);
                     targetPosition = mouseRaycast.GetMousePosition();
@@ -149,7 +150,7 @@ namespace Project.Player
         {
             minDistanceToInteractable = 5;
         }
-        
+
         private bool IsNearGround(Transform target)
         {
             Collider2D[] nearbyGround = Physics2D.OverlapCircleAll(target.position, 5f);
@@ -164,7 +165,7 @@ namespace Project.Player
 
             return false;
         }
-        
+
         public Vector2 GetMoveDirection()
         {
             if (isMoving)

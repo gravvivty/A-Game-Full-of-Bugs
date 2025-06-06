@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: OmiCurtainDialogue
   m_EditorClassIdentifier: 
   dialogueLines:
-  - DialogueID: 0
+  - SpeakerName: Omi
+    DialogueID: 0
     Text: "Das sind aber tolle Vorh\xE4nge. Warum willst du sie den loswerden?"
     Choices:
     - Text: Ach, ich renoviere nur. Ich brauch dringend einen moderneren Look.
@@ -34,18 +35,21 @@ MonoBehaviour:
       Conditions: []
     Conditions: []
     Rewards: []
-  - DialogueID: 0_c-1
+  - SpeakerName: Omi
+    DialogueID: 0_c-1
     Text: Du Scherzkeks! Inneneinrichtung hat dich doch noch nie interessiert.
     Choices: []
     Conditions: []
     Rewards: []
-  - DialogueID: 0_c-2
+  - SpeakerName: Omi
+    DialogueID: 0_c-2
     Text: "Holder? Das glaube ich nicht. Der hat sich doch gestern neue Vorh\xE4nge
       bei IK\xE4fer gekauft!"
     Choices: []
     Conditions: []
     Rewards: []
-  - DialogueID: 0_c-3
+  - SpeakerName: Omi
+    DialogueID: 0_c-3
     Text: "HA! DU, ein Magier? HAHAHAHA! Na gut, dann zauber doch mal was, oh gro\xDFer
       Dieter!"
     Choices: []
