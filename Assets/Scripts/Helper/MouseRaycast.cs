@@ -21,9 +21,9 @@ namespace Project.Helper
 
             foreach (RaycastHit2D hit in hits)
             {
-                if (hit.collider != null && !hit.collider.CompareTag("Ground"))
+                if (!hit.collider.CompareTag("Ground"))
                 {
-                    return hit.collider.gameObject;
+                    return hit.collider?.gameObject;
                 }
             }
 
