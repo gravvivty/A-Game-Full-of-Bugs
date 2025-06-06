@@ -4412,7 +4412,7 @@ MonoBehaviour:
   itemRepresentation: {fileID: 0}
   spriteRenderer: {fileID: 0}
   isLocked: 0
-  sceneToLoad: Main Menu
+  sceneToLoad: Canyon
 --- !u!61 &1663037198
 BoxCollider2D:
   m_ObjectHideFlags: 0
