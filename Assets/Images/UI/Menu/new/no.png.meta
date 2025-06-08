@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6b6a4a10ba1d47140b2ad199f90d7ae0
+guid: c64e32ef58c3f1d4893184645d3e8b0d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5278803871176252876
-    second: button_gear_0
+      213: -469738134670642733
+    second: no_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,19 +97,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -126,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_gear_0
+      name: no_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 21
-        width: 253
-        height: 256
+        x: 0
+        y: 0
+        width: 362
+        height: 260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ccdda6c0724124940800000000000000
-      internalID: 5278803871176252876
+      spriteID: 3d17081c7a72b79f0800000000000000
+      internalID: -469738134670642733
       vertices: []
       indices: 
       edges: []
@@ -160,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      button_gear_0: 5278803871176252876
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
