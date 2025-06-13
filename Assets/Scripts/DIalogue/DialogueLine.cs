@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Project.Inventory;
 using UnityEngine;
 
 namespace Project.Dialogue.Data
@@ -46,7 +47,7 @@ namespace Project.Dialogue.Data
     public class DialogueReward
     {
         public RewardType Type;
-        public string ItemID;
+        public ItemData Item;
         public int Amount;
     }
 

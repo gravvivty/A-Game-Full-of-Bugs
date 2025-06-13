@@ -20,3 +20,5 @@ MonoBehaviour:
   possibleCombinations:
   - otherItemID: 57
     resultItem: {fileID: 11400000, guid: 5cbbb81c839f4fc47956aa798e0f6a68, type: 2}
+  - otherItemID: 66
+    resultItem: {fileID: 11400000, guid: 3e3b3c0449904be4ea761bf3b59ef86d, type: 2}

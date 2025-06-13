@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canyon_honey2_down_0: 2175580436128409021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

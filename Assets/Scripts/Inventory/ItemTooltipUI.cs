@@ -39,7 +39,7 @@ public class TooltipUI : MonoBehaviour
     {
         nameText.text = name;
         descriptionText.text = description;
-        Debug.Log("CHANGE TOOLTIP");
+        // Debug.Log("CHANGE TOOLTIP");
     }
 
     public void SetShow(bool show)

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canyon_flower_tall_cut_0: -1862803452372842335
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

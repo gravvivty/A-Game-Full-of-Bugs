@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      schnegge_auf_koks-4_0: 6661897617376081216
+      schnegge_auf_koks-4_1: -6771984280279289374
+      schnegge_auf_koks-4_2: 3703106554406330592
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
