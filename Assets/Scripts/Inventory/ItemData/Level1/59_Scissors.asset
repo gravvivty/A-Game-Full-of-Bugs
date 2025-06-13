@@ -16,4 +16,6 @@ MonoBehaviour:
   itemID: 59
   description: Schere. Praktisch!
   icon: {fileID: -5538908342871423228, guid: ad9bcdd0973a31b4da8a5af1d79171b9, type: 3}
-  possibleCombinations: []
+  possibleCombinations:
+  - otherItemID: 64
+    resultItem: {fileID: 11400000, guid: 0443acd3c60d48f45a70d3c567c60210, type: 2}

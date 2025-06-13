@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canyon_flipchart_0: 4474390436268149029
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

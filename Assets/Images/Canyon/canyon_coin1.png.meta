@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canyon_coin1_0: -8565074423521848396
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      schnegge_talking-2_0: 507280639528986162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

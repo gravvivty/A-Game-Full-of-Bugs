@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canyon_flower_small_0: -9112787836103781033
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

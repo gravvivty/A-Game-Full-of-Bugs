@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canyon_cliff_0: 4608699008218391259
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canyon_floor_inactive_0: -6707524699332929321
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canyon_broken_bridge2_0: 3527556723036228787
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

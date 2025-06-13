@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      schnegge_kaefer_baum-1_0: 4792227110138233552
+      schnegge_kaefer_baum-1_1: 3873193485573507212
+      schnegge_kaefer_baum-1_2: 1426548029218032714
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
