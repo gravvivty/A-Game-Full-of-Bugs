@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dieter_zauber_spiegelung-9_0: -185983015138634107
+      dieter_zauber_spiegelung-9_1: 2526306421262381045
+      dieter_zauber_spiegelung-9_2: -1541729549603313448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

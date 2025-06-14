@@ -82,6 +82,12 @@ namespace Project.Dialogue
             choiceIndex = Mathf.Clamp(choiceIndex, 0, currentDialogue.Choices.Count - 1);
             if (currentDialogue == null) return;
             var choice = currentDialogue.Choices[choiceIndex];
+
+            if (choice.shouldBeRemoved)
+            {
+                choice.isRemoved = true; // Mark the choice as used
+            }
+
             if (CheckConditions(choice.Conditions))
             {
                 StartDialogue(currentDialogueData, choice.NextDialogueID, currentSpeakingNPC);
@@ -109,6 +115,7 @@ namespace Project.Dialogue
 
             foreach (var reward in rewards)
             {
+                if (reward.isGiven) continue; // Skip if the reward has already been given
                 switch (reward.Type)
                 {
                     case RewardType.Item:
@@ -117,6 +124,7 @@ namespace Project.Dialogue
                         {
                             InventoryManager.Instance.AddItem(reward.Item);
                             inventoryUI.UpdateInventoryUI();
+                            reward.isGiven = true; // Mark the reward as given
                         }
                         break;
                 }

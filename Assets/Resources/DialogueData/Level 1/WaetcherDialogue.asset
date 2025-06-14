@@ -19,9 +19,13 @@ MonoBehaviour:
     Choices:
     - Text: "Beseite, W\xE4chter! Ich verlasse nun das K\xE4ferdorf."
       NextDialogueID: 0_c-1
+      shouldBeRemoved: 1
+      isRemoved: 0
       Conditions: []
     - Text: "Vergiss es, du bist meiner Worte eh nicht w\xFCrdig."
       NextDialogueID: 0_c-2
+      shouldBeRemoved: 0
+      isRemoved: 0
       Conditions: []
     Conditions: []
     Rewards: []

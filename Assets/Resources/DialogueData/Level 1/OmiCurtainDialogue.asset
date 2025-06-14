@@ -19,19 +19,27 @@ MonoBehaviour:
     Choices:
     - Text: Ach, ich renoviere nur. Ich brauch dringend einen moderneren Look.
       NextDialogueID: 
+      shouldBeRemoved: 1
+      isRemoved: 0
       Conditions: []
     - Text: "Der W\xE4chter vom Tor wollte mir die Vorh\xE4nge schon abkaufen. Wenn
         du sie auch willst, solltest du ihn wohl besser zuerst ausschalten."
       NextDialogueID: 0_c-2
+      shouldBeRemoved: 1
+      isRemoved: 0
       Conditions: []
     - Text: Ich habe ein magisches Artefakt gefunden und mache mich jetzt als Magier
         auf den Weg ins Unbekannte, also brauche ich sie nicht mehr
       NextDialogueID: 0_c-3
+      shouldBeRemoved: 1
+      isRemoved: 0
       Conditions:
       - Type: 0
         ItemID: 56
     - Text: "Wir reden sp\xE4ter."
       NextDialogueID: 
+      shouldBeRemoved: 0
+      isRemoved: 0
       Conditions: []
     Conditions: []
     Rewards: []

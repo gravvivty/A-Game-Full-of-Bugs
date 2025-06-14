@@ -27,6 +27,8 @@ namespace Project.Dialogue.Data
     {
         public string Text;
         public string NextDialogueID;
+        public bool shouldBeRemoved = true;
+        [HideInInspector] public bool isRemoved = false;
         public List<DialogueCondition> Conditions;
     }
 
@@ -49,6 +51,7 @@ namespace Project.Dialogue.Data
         public RewardType Type;
         public ItemData Item;
         public int Amount;
+        public bool isGiven = false;
     }
 
     /// <summary>

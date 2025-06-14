@@ -23,6 +23,8 @@ MonoBehaviour:
     - Text: "Warum sammle ich \xFCberhaupt Honig wie ein gew\xF6hnlicher K\xE4fer?
         Ich bin immerhin ein Magier!"
       NextDialogueID: 
+      shouldBeRemoved: 0
+      isRemoved: 0
       Conditions: []
     Conditions: []
     Rewards: []

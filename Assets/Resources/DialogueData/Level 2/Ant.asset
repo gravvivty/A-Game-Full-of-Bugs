@@ -22,16 +22,24 @@ MonoBehaviour:
     Choices:
     - Text: Wer bist du denn?
       NextDialogueID: 0_c-1
+      shouldBeRemoved: 1
+      isRemoved: 0
       Conditions: []
     - Text: "Warum sollte ich deinen Stock kaufen? Hier liegen \xFCberall welche!"
       NextDialogueID: 0_c-2
+      shouldBeRemoved: 0
+      isRemoved: 0
       Conditions: []
     - Text: Das versteh ich alles nicht. Wieso genau ist der Stock jetzt so wertvoll?
         Nur, weil du es behauptest?
       NextDialogueID: 0_c-3
+      shouldBeRemoved: 1
+      isRemoved: 1
       Conditions: []
     - Text: "Was soll der Stock denn \xFCberhaupt kosten?"
       NextDialogueID: 0_c-4
+      shouldBeRemoved: 0
+      isRemoved: 0
       Conditions: []
     Conditions: []
     Rewards: []
@@ -63,6 +71,7 @@ MonoBehaviour:
     - Type: 0
       Item: {fileID: 11400000, guid: 0eab87081dd9b63409c63ab671fd1fb1, type: 2}
       Amount: 1
+      isGiven: 1
   - SpeakerName: Ameise
     DialogueID: 0_c-4
     Text: "Drei Honigtropfen \u2013 nach aktuellem Kurs. Nat\xFCrlich nur solange
