@@ -44,6 +44,11 @@ namespace Project.Dialogue
                     if (!CheckChoiceConditions(choices[i])) continue; // Skip this choice if conditions are not met
                 }
 
+                if (choices[i].isRemoved)
+                {
+                    continue;
+                }
+
                 var choice = choices[i];
                 // Create a new GameObject for the button
                 GameObject buttonObj = new GameObject($"Choice Button {i}");

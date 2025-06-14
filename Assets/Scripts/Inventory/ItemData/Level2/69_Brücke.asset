@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "69_Br\xFCcke"
   m_EditorClassIdentifier: 
   itemName: Langer Stock
-  itemID: 0
+  itemID: 69
   description: "Ein Langer Stock.\nDamit k\xF6nnte man eine Br\xFCcke bauen."
   icon: {fileID: 21300000, guid: 7755e4ff4d0011b4b9c7f317d06e5c32, type: 3}
   possibleCombinations:

@@ -21,6 +21,7 @@ namespace Project.Player
         private Vector2 targetPosition;
         private GameObject currentInteractable;
         private Rigidbody2D rb;
+        public bool ignoreGroundCheck = false;
 
 
         void Start()
@@ -41,7 +42,7 @@ namespace Project.Player
 
         void OnTriggerExit2D(Collider2D other)
         {
-            if (other.CompareTag("Ground"))
+            if (other.CompareTag("Ground") && !ignoreGroundCheck)
             {
                 minDistanceToInteractable = 100f;
                 if (isMoving)
@@ -71,6 +72,7 @@ namespace Project.Player
                     targetPosition = mouseRaycast.GetMousePosition();
                     currentInteractable = null;
                     isMoving = true;
+                    ignoreGroundCheck = false;
                 }
                 else if (gameObjectHit != null && gameObjectHit.GetComponent<Interactables>() != null)
                 {
@@ -111,6 +113,11 @@ namespace Project.Player
                 else if ((Vector2)transform.position == targetPosition)
                 {
                     isMoving = false;
+                    Debug.Log("Reached target position: " + targetPosition);
+                    if (ignoreGroundCheck && currentInteractable == null)
+                    {
+                        ignoreGroundCheck = false;
+                    }
                 }
             }
         }
@@ -172,6 +179,15 @@ namespace Project.Player
                 return (targetPosition - (Vector2)transform.position).normalized;
             else
                 return Vector2.zero;
+        }
+
+        public void MovePlayerTo(Vector2 position)
+        {
+            ignoreGroundCheck = true; // Ignore ground check when moving to a new position
+            targetPosition = position;
+            Debug.Log($"Moving player to position: {targetPosition}");
+            isMoving = true;
+            currentInteractable = null; // Reset current interactable when moving to a new position
         }
     }
 }

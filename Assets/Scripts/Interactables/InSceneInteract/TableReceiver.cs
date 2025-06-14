@@ -1,6 +1,8 @@
+using System.Collections;
 using Project.Dialogue.Data;
 using Project.Interactable.NPCs;
 using Project.Inventory;
+using Project.Player;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -41,8 +43,13 @@ namespace Project.Interactable.InSceneInteract
 
                 if (spriteRenderer != null && draggedItem.itemID == 56 && honeyCount >= 3)
                 {
-                    // TODO: Make player walk to right position
-                    player.GetComponent<Animator>().SetBool("Mirroring", true);
+                    Vector3 mirrorPosition = new Vector2(-1.7f, -4.5f);
+                    player.GetComponent<PlayerMovement>().MovePlayerTo(mirrorPosition);
+                    if (player.transform.position != mirrorPosition)
+                    {
+                        StartCoroutine(wait());
+                    }
+
                     ant.SetDialogueData(antMirrorHoneyDialogue);
                     // TODO: stop animation when dialogue ends
                 }
@@ -51,6 +58,13 @@ namespace Project.Interactable.InSceneInteract
 
             Debug.Log("Can't use this item on the table.");
             return false;
+        }
+
+        public IEnumerator wait()
+        {
+            yield return new WaitForSeconds(1f);
+            player.GetComponent<SpriteRenderer>().flipX = false;
+            player.GetComponent<Animator>().SetBool("Mirroring", true);
         }
     }
 }
