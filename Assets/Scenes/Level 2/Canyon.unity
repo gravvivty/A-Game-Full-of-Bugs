@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 418344945}
   m_Layer: 0
   m_Name: canyon_flower_tall_0
-  m_TagString: Untagged
+  m_TagString: Put
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1296,7 +1296,7 @@ GameObject:
   - component: {fileID: 641237383}
   m_Layer: 0
   m_Name: canyon_slime
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1549,11 +1549,15 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1150432248738750437, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
+    - target: {fileID: 850503864007328943, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
+      propertyPath: m_Color.a
+      value: 0.8235294
       objectReference: {fileID: 0}
     - target: {fileID: 1150432248738750437, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1150432248738750437, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
@@ -1651,6 +1655,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1860632815485378768, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902759231254411081, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b0bff85775dbe844ea56a83857f38cd5, type: 2}
+    - target: {fileID: 1902759231254411081, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 625379189284010697, guid: b0bff85775dbe844ea56a83857f38cd5, type: 2}
+    - target: {fileID: 1902759231254411081, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2016854449165479343, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
@@ -1863,6 +1879,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7501474564449681071, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010605307801408283, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b0bff85775dbe844ea56a83857f38cd5, type: 2}
+    - target: {fileID: 8010605307801408283, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 625379189284010697, guid: b0bff85775dbe844ea56a83857f38cd5, type: 2}
+    - target: {fileID: 8010605307801408283, guid: 1dd5563dc35db4442b3e74bec9377902, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3156,7 +3184,7 @@ GameObject:
   - component: {fileID: 1596544571}
   m_Layer: 0
   m_Name: canyon_broken_bridge1_0
-  m_TagString: Untagged
+  m_TagString: Put
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4146,7 +4174,7 @@ GameObject:
   - component: {fileID: 1934296365}
   m_Layer: 0
   m_Name: canyon_table
-  m_TagString: Untagged
+  m_TagString: Put
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4589,6 +4617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2058778753}
   - component: {fileID: 2058778754}
+  - component: {fileID: 2058778755}
   m_Layer: 0
   m_Name: canyon_flower_tall_cut_0
   m_TagString: Untagged
@@ -4667,6 +4696,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2058778755
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058778752}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 3.0126987, y: -1.9012871}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.25, y: 5.71}
+    newSize: {x: 8.25, y: 5.71}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.6602764, y: 1.047677}
+  m_EdgeRadius: 0
 --- !u!1 &2066981337
 GameObject:
   m_ObjectHideFlags: 0

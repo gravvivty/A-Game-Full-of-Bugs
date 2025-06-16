@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Schere
   itemID: 59
-  description: Schere. Praktisch!
+  description: Meine alte Gartenschere. Praktisch im Wald!
   icon: {fileID: -5538908342871423228, guid: ad9bcdd0973a31b4da8a5af1d79171b9, type: 3}
   possibleCombinations:
   - otherItemID: 64

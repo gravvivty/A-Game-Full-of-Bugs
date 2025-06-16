@@ -1,3 +1,4 @@
+using Project.Helper;
 using Project.Inventory;
 using UnityEngine;
 
@@ -21,6 +22,7 @@ namespace Project.Interactable.InSceneInteract
 
                     cutFlower.SetActive(true);
                     gameObject.SetActive(false);
+                    CursorManager.Instance.SetNormalCursor();
 
                     return true;
                 }

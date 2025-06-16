@@ -1,3 +1,4 @@
+using Project.Helper;
 using Project.Inventory;
 using UnityEngine;
 
@@ -28,6 +29,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             Debug.Log("Can't use this item on the bridge.");
+            CursorManager.Instance.SetPutCursor();
             return false;
         }
     }
