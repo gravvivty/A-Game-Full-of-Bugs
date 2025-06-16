@@ -3,6 +3,7 @@ using Project.Dialogue.Data;
 using System.Collections.Generic;
 using Project.Interactable.NPCs;
 using Project.Inventory;
+using UnityEngine.SceneManagement;
 
 namespace Project.Dialogue
 {
@@ -19,7 +20,6 @@ namespace Project.Dialogue
         [SerializeField] private InventoryUI inventoryUI;
         private DialogueData currentDialogueData;
         private DialogueLine currentDialogue;
-        private Vector3 currentPosition;
         private GameObject currentDialogueUIObject;
         private NPC currentSpeakingNPC;
 
@@ -126,6 +126,9 @@ namespace Project.Dialogue
                             inventoryUI.UpdateInventoryUI();
                             reward.isGiven = true; // Mark the reward as given
                         }
+                        break;
+                    case RewardType.SceneToLoad:
+                        SceneManager.LoadScene(reward.SceneToLoad);
                         break;
                 }
             }
