@@ -15,7 +15,8 @@ MonoBehaviour:
   dialogueLines:
   - SpeakerName: Schnecke
     DialogueID: 0
-    Text: Huh?
+    Text: "Huch\u2026 naja, ich w\xFCrde Sie gern mitnehmen, aber\u2026 ich bin gerade
+      ein bisschen schlapp... aber wenn Ihnen Schneckentempo nichts ausmacht..."
     Choices: []
     Conditions: []
     Rewards: []

@@ -70,7 +70,8 @@ MonoBehaviour:
     Rewards:
     - Type: 0
       Item: {fileID: 11400000, guid: 0eab87081dd9b63409c63ab671fd1fb1, type: 2}
-      Amount: 1
+      Amount: 2
+      SceneToLoad: 
       isGiven: 1
   - SpeakerName: Ameise
     DialogueID: 0_c-4

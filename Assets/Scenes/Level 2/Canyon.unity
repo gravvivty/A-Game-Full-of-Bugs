@@ -2413,6 +2413,7 @@ GameObject:
   - component: {fileID: 1107788720}
   - component: {fileID: 1107788719}
   - component: {fileID: 1107788718}
+  - component: {fileID: 1107788722}
   m_Layer: 0
   m_Name: schnegge_talking-1_0
   m_TagString: NPC
@@ -2573,6 +2574,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1107788722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107788716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27e10ad4edd7cb44190a118e39e5f61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemRepresentation: {fileID: 11400000, guid: 9915e7c2da7c87f42967695047d38b3f, type: 2}
+  spriteRenderer: {fileID: 1107788721}
+  snailNPC: {fileID: 1107788719}
+  newSnailDialogue: {fileID: 11400000, guid: fd335b70d9327524a9a843a94da48857, type: 2}
 --- !u!1 &1231797549
 GameObject:
   m_ObjectHideFlags: 0

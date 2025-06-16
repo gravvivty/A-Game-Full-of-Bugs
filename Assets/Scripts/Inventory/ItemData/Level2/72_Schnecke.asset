@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec2db5e5330562a498accaac6098e01a, type: 3}
-  m_Name: 61_Pollen
+  m_Name: 72_Schnecke
   m_EditorClassIdentifier: 
-  itemName: Pollen
-  itemID: 61
-  description: Ein Haufen Pollen. Gut um jemanden anzutreiben
-  icon: {fileID: 21300000, guid: 431b8763a1ca34c43a9578c0fee37d03, type: 3}
+  itemName: Schnecke
+  itemID: 72
+  description: Schnecke
+  icon: {fileID: -939976953777488821, guid: d2ce79d4ac038a0479b07d3af9ae6ece, type: 3}
   possibleCombinations:
   - otherItemID: 62
-    resultItem: {fileID: 11400000, guid: 534a5b292b5b444478312ff6b78f1f00, type: 2}
-  - otherItemID: 72
     resultItem: {fileID: 11400000, guid: a37d0cb1e76a6d543832d7d443886b6c, type: 2}

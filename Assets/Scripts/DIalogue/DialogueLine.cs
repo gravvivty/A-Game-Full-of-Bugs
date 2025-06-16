@@ -51,6 +51,7 @@ namespace Project.Dialogue.Data
         public RewardType Type;
         public ItemData Item;
         public int Amount;
+        public string SceneToLoad;
         public bool isGiven = false;
     }
 
@@ -69,6 +70,6 @@ namespace Project.Dialogue.Data
     public enum RewardType
     {
         Item,
-        Quest
+        SceneToLoad
     }
 }

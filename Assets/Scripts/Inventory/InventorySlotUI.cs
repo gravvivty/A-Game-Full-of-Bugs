@@ -117,7 +117,7 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             {
                 if (receiver.TryUseItem(itemData))
                 {
-                    if (itemData.itemName != "Staff")
+                    if (itemData.itemName != "Staff" && itemData.itemName != "Schere")
                     {
                         InventoryManager.Instance.RemoveItem(itemData);
                         InventoryUI.Instance.UpdateInventoryUI();
