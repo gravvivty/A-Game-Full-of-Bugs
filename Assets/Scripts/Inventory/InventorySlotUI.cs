@@ -118,11 +118,10 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
             {
                 if (receiver.TryUseItem(itemData))
                 {
-                    if (itemData.itemName != "Staff" && itemData.itemName != "Schere")
-                    {
-                        InventoryManager.Instance.RemoveItem(itemData);
-                        InventoryUI.Instance.UpdateInventoryUI();
-                    }
+                    // Do not remove Staff and Scissors
+                    if (itemData.itemID is 56 or 59) return;
+                    InventoryManager.Instance.RemoveItem(itemData);
+                    InventoryUI.Instance.UpdateInventoryUI();
                     return;
                 }
             }

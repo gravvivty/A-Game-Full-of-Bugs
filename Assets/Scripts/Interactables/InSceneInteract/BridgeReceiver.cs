@@ -8,6 +8,7 @@ namespace Project.Interactable.InSceneInteract
     {
         // Dialogue related
         [SerializeField] private GameObject bridge;
+        [SerializeField] private GameObject snail;
 
         public override bool TryUseItem(ItemData draggedItem)
         {
@@ -21,6 +22,7 @@ namespace Project.Interactable.InSceneInteract
                 if (spriteRenderer != null && draggedItem.itemID == 69)
                 {
                     bridge.SetActive(true);
+                    snail.GetComponent<BoxCollider2D>().enabled = true;
                     InventoryManager.Instance.RemoveItem(draggedItem);
                     return true;
                 }
