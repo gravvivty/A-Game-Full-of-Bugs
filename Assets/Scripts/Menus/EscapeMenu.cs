@@ -1,10 +1,12 @@
-using System;
-using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class EscapeMenu : MonoBehaviour
 {
+    [SerializeField] private GameObject mainPanel; // das Panel mit Resume/Menu etc.
     [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] private GameObject confirmPanel;
+
     private bool isVisible = false;
 
     public void Awake()
@@ -13,6 +15,8 @@ public class EscapeMenu : MonoBehaviour
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
+
+        confirmPanel.SetActive(false); // Sicherstellen, dass das Dialogfenster unsichtbar ist
     }
 
     private void Update()
@@ -37,17 +41,28 @@ public class EscapeMenu : MonoBehaviour
     public void ResumeGame()
     {
         isVisible = false;
-
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
-
         Time.timeScale = 1;
     }
 
-    public void QuitGame()
+    public void OnQuitButtonClicked()
+    {
+        mainPanel.SetActive(false);         // Escape-Menü ausblenden
+        confirmPanel.SetActive(true);       // Bestätigungsfenster einblenden
+    }
+
+
+    public void OnConfirmYes()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("Main Menu"); // oder "MainMenu", je nach Szenenname
+    }
+
+    public void OnConfirmNo()
+    {
+        confirmPanel.SetActive(false);      // Bestätigungsfenster ausblenden
+        mainPanel.SetActive(true);          // Escape-Menü wieder anzeigen
     }
 }
