@@ -9,6 +9,7 @@ public class AppSessionReset : MonoBehaviour
         // Clear this only at the beginning of a full game session
         // Add any Prefs that arent supposed to stay between sessions
         PlayerPrefs.DeleteKey("isLit");
+        PlayerPrefs.DeleteKey("isRopeCut");
 
         // Reset all DialogueData ScriptableObjects
         List<DialogueData> allDialogueData = new List<DialogueData>();

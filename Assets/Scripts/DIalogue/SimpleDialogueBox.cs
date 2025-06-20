@@ -40,13 +40,14 @@ public class SimpleDialogueBox : MonoBehaviour
             if (!_started)
             {
                 _lineIndex = 0;
-                _text.SetText(_dialogueLines[_lineIndex]);
+                // _text.SetText(_dialogueLines[_lineIndex]);
                 _group.alpha = 1;
                 _started = true;
             }
             else if (_lineIndex < _dialogueLines.Count)
             {
-                _text.SetText(_dialogueLines[_lineIndex++]);
+                // This logic is broken and doesnt work - it increases it every frame, every click no matter what
+                // _text.SetText(_dialogueLines[_lineIndex++]);
             }
             else
             {
