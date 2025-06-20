@@ -22,11 +22,12 @@ namespace Project.Scene.SceneControllerLvl1
 
         void Awake()
         {
-            InitializeScene();
+            StartCoroutine(InitializeScene());
         }
 
-        private void InitializeScene()
+        private IEnumerator  InitializeScene()
         {
+            yield return null; // Wait one frame to let all Start() run
 
             if (PlayerPrefs.GetInt("isLit", 0) == 1)
             {
@@ -38,16 +39,13 @@ namespace Project.Scene.SceneControllerLvl1
 
                 if (omi.activeSelf)
                 {
-                    Animator omiAnimator = omi.GetComponent<Animator>();
-                    Debug.Log("PanicOmi? " + omiAnimator.HasState(0, Animator.StringToHash("PanicOmi")));
-                    omiAnimator.Play("PanicOmi", 0, 0f);
+                    StartCoroutine(PlayOmiPanicNextFrame());
                     omi.GetComponent<NPC>().SetDialogueData(omi_panic_dialogueData);
                 }
 
                 if (omi_noCurtain.activeSelf)
                 {
-                    Animator omiNoCurtainAnimator = omi_noCurtain.GetComponent<Animator>();
-                    omiNoCurtainAnimator.Play("PanicOmi", 0, 0f);
+                    StartCoroutine(PlayNoCurtainOmiPanicNextFrame());
                     omi_noCurtain.GetComponent<NPC>().SetDialogueData(omi_panic_dialogueData);
                 }
 
@@ -94,6 +92,31 @@ namespace Project.Scene.SceneControllerLvl1
         private bool HasRequiredItem(int id)
         {
             return InventoryManager.Instance.HasItemWithID(id);
+        }
+        
+        
+        IEnumerator PlayOmiPanicNextFrame()
+        {
+            yield return null;
+            if (omi.activeSelf)
+            {
+                var anim = omi.GetComponent<Animator>();
+                anim.enabled = true;
+                anim.Play("PanicOmi", 0, 0f);
+                anim.Update(0f);
+            }
+        }
+        
+        IEnumerator PlayNoCurtainOmiPanicNextFrame()
+        {
+            yield return null;
+            if (omi_noCurtain.activeSelf)
+            {
+                var anim = omi_noCurtain.GetComponent<Animator>();
+                anim.enabled = true;
+                anim.Play("PanicOmi", 0, 0f);
+                anim.Update(0f);
+            }
         }
     }
 }
