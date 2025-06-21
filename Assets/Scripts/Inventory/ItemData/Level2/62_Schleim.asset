@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Schleim
   itemID: 62
-  description: Schnecken Schleim. Klebrig.
+  description: Schnecken Schleim. Klebrig, ewww!
   icon: {fileID: 21300000, guid: 80f7b5131f934f3488814afaac8c73d6, type: 3}
   possibleCombinations:
   - otherItemID: 61
