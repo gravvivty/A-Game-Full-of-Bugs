@@ -54,7 +54,7 @@ public class TooltipUI : MonoBehaviour
 
         if (tooltipObject != null)
         {
-            tooltipObject.GetComponent<Image>().enabled = show;
+            tooltipObject.GetComponent<Image>().enabled = showTooltip;
 
             foreach (Transform child in tooltipObject.transform)
             {
