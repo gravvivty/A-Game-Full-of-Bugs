@@ -4033,8 +4033,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minY: -5
   maxY: -2.5
-  minScale: 0.285
-  maxScale: 0.4
+  minScale: 1
+  maxScale: 0.75
   player: {fileID: 1751376800}
 --- !u!114 &1751376805 stripped
 MonoBehaviour:
@@ -4173,8 +4173,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1234456679
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b42c4cf3e77fdae4badefca013929056, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
