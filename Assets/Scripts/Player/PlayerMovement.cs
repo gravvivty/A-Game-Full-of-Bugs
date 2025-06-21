@@ -14,7 +14,7 @@ namespace Project.Player
         [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private MouseRaycast mouseRaycast;
         [SerializeField] private float moveSpeed = 5f;
-        [SerializeField] private float valueAboveGround = 0f;
+        [SerializeField] private float valueAboveGround = 5f;
         [SerializeField] private float minDistanceToInteractable = 5f;
 
         private bool isMoving = false;

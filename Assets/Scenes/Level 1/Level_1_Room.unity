@@ -808,11 +808,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3246657993848841768, guid: 0b2ab6498bb791d46b80e6574e66209d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.19
+      value: 1.77
       objectReference: {fileID: 0}
     - target: {fileID: 3246657993848841768, guid: 0b2ab6498bb791d46b80e6574e66209d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.48
+      value: -6.91
       objectReference: {fileID: 0}
     - target: {fileID: 3246657993848841768, guid: 0b2ab6498bb791d46b80e6574e66209d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -854,6 +854,10 @@ PrefabInstance:
       propertyPath: mouseRaycast
       value: 
       objectReference: {fileID: 2595157172694635225}
+    - target: {fileID: 4071542073435890612, guid: 0b2ab6498bb791d46b80e6574e66209d, type: 3}
+      propertyPath: valueAboveGround
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 4071542073435890612, guid: 0b2ab6498bb791d46b80e6574e66209d, type: 3}
       propertyPath: minDistanceToInteractable
       value: 5
@@ -929,7 +933,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112831584}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9aebf67320a66c14089e735d8c6750f9, type: 3}
   m_Name: 
@@ -2210,7 +2214,7 @@ Transform:
   m_GameObject: {fileID: 560659127}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -4.6, z: 0}
+  m_LocalPosition: {x: -5.658, y: -6.39, z: 0}
   m_LocalScale: {x: 0.53922004, y: 0.53922004, z: 0.53922004}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2260,15 +2264,15 @@ SpriteRenderer:
   m_SortingLayerID: 1234456679
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3567834880229234754, guid: afe41d584fde0bd469df4198dd5fc1bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: afe41d584fde0bd469df4198dd5fc1bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 15.39, y: 17.390001}
+  m_Size: {x: 38.399998, y: 21.599998}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &591386266

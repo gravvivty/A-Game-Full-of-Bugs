@@ -694,7 +694,7 @@ PrefabInstance:
       objectReference: {fileID: 870441852}
     - target: {fileID: 4071542073435890612, guid: 0b2ab6498bb791d46b80e6574e66209d, type: 3}
       propertyPath: valueAboveGround
-      value: 1
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4071542073435890612, guid: 0b2ab6498bb791d46b80e6574e66209d, type: 3}
       propertyPath: minDistanceToInteractable
