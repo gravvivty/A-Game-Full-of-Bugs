@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Project.Inventory;
 using UnityEngine;
 
 namespace Project.Dialogue.Data
@@ -26,6 +27,8 @@ namespace Project.Dialogue.Data
     {
         public string Text;
         public string NextDialogueID;
+        public bool shouldBeRemoved = true;
+        [HideInInspector] public bool isRemoved = false;
         public List<DialogueCondition> Conditions;
     }
 
@@ -46,8 +49,10 @@ namespace Project.Dialogue.Data
     public class DialogueReward
     {
         public RewardType Type;
-        public string ItemID;
+        public ItemData Item;
         public int Amount;
+        public string SceneToLoad;
+        public bool isGiven = false;
     }
 
     /// <summary>
@@ -65,6 +70,6 @@ namespace Project.Dialogue.Data
     public enum RewardType
     {
         Item,
-        Quest
+        SceneToLoad
     }
 }
