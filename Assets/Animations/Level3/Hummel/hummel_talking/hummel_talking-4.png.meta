@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hummel_talking-4_0: 2740927737089299195
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

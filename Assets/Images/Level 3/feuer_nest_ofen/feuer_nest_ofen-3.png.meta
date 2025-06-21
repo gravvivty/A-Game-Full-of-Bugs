@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      feuer_nest_ofen-3_0: 2019843284636989962
+      feuer_nest_ofen-3_1: -8619440336295498651
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

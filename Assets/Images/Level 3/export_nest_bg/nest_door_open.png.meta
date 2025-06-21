@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nest_door_open_0: -8061936348378294171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

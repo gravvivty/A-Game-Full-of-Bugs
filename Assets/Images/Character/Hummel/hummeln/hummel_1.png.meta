@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hummel_1_0: 9062353483485181946
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

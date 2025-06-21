@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wespe_1_blinded_0: -1652901886239645567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

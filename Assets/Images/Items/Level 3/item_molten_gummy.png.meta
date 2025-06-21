@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      item_molten_gummy_0: 8928529942313573666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

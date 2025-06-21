@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nest_exit_0: -6065389561140217887
+      nest_exit_1: -4814287763946228283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

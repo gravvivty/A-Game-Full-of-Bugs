@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wespe_2_flying-1_0: 8791202844361072520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

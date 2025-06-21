@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nest_background_0: -1930778101759175300
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

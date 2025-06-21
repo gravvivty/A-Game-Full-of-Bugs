@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      item_gummybear_0: -7133115109573968053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

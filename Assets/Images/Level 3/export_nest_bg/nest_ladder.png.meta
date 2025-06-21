@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nest_ladder_0: -4217482965841318564
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
