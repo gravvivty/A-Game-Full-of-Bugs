@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2db5e5330562a498accaac6098e01a, type: 3}
+  m_Name: "83_Schl\xFCssel"
+  m_EditorClassIdentifier: 
+  itemName: "Schl\xFCssel"
+  itemID: 83
+  description: "Ein Schl\xFCssel. \nWelche T\xFCren das wohl \xF6ffnet."
+  icon: {fileID: -3305733944857187851, guid: 98731bdc20a220d428772380a75b8e9d, type: 3}
+  possibleCombinations:
+  - otherItemID: 84
+    resultItem: {fileID: 11400000, guid: ec72a14552d9b574ea65cea610172a4f, type: 2}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2db5e5330562a498accaac6098e01a, type: 3}
+  m_Name: "75_Gummib\xE4rchen"
+  m_EditorClassIdentifier: 
+  itemName: "Gummib\xE4rchen"
+  itemID: 75
+  description: Klebrig aber verformbar
+  icon: {fileID: -7133115109573968053, guid: d8e516535ec69ef4d95224048319b077, type: 3}
+  possibleCombinations:
+  - otherItemID: 77
+    resultItem: {fileID: 11400000, guid: 9885930346482444fb22ccc58d993b38, type: 2}

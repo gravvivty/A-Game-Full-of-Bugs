@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2db5e5330562a498accaac6098e01a, type: 3}
+  m_Name: "79_Fl\xFCssige Masse"
+  m_EditorClassIdentifier: 
+  itemName: "Fl\xFCssige Masse"
+  itemID: 79
+  description: "Eine fl\xFCssige Masse"
+  icon: {fileID: 8928529942313573666, guid: 700b69143781c2b428b55f98673714a3, type: 3}
+  possibleCombinations:
+  - otherItemID: 78
+    resultItem: {fileID: 11400000, guid: c7279a0d8a11c554f9e898859053ae2d, type: 2}

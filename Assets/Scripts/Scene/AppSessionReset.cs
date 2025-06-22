@@ -15,6 +15,7 @@ public class AppSessionReset : MonoBehaviour
         List<DialogueData> allDialogueData = new List<DialogueData>();
         allDialogueData.AddRange(Resources.LoadAll<DialogueData>("DialogueData/Level 1"));
         allDialogueData.AddRange(Resources.LoadAll<DialogueData>("DialogueData/Level 2"));
+        allDialogueData.AddRange(Resources.LoadAll<DialogueData>("DialogueData/Level 3"));
 
         foreach (var dialogueData in allDialogueData)
         {
