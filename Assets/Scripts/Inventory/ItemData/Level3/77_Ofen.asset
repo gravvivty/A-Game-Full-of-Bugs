@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Ofen
   itemID: 77
   description: "Hei\xDF"
-  icon: {fileID: 21300000, guid: e82acddf3c3701442813d22be1690f84, type: 3}
+  icon: {fileID: -7885615694121002942, guid: e82acddf3c3701442813d22be1690f84, type: 3}
   possibleCombinations:
   - otherItemID: 75
     resultItem: {fileID: 11400000, guid: 9885930346482444fb22ccc58d993b38, type: 2}

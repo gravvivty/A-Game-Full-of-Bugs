@@ -15,7 +15,9 @@ MonoBehaviour:
   itemName: "T\xFCr"
   itemID: 76
   description: "Verschlossene T\xFCr"
-  icon: {fileID: 21300000, guid: 1d42470109e29f549a91e4db59bcca67, type: 3}
+  icon: {fileID: 2130470416073260760, guid: 1d42470109e29f549a91e4db59bcca67, type: 3}
   possibleCombinations:
   - otherItemID: 74
     resultItem: {fileID: 11400000, guid: f0ea15c45e6c19740ae49ff927a2c4ab, type: 2}
+  - otherItemID: 80
+    resultItem: {fileID: 11400000, guid: ec72a14552d9b574ea65cea610172a4f, type: 2}

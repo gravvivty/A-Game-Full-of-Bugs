@@ -15,5 +15,5 @@ MonoBehaviour:
   itemName: "Offene T\xFCr"
   itemID: 85
   description: 
-  icon: {fileID: 150957347020625660, guid: 3421bae1e0d765444b541cbfbc094292, type: 3}
+  icon: {fileID: -8061936348378294171, guid: 09e987175df9efa43a0b42f08241ce50, type: 3}
   possibleCombinations: []

@@ -22,7 +22,7 @@ namespace Project.Interactable.InSceneInteract
                 {
                     wasp.GetComponent<Animator>().SetBool("Blinded", true);
                     wasp.GetComponent<BoxCollider2D>().enabled = false;
-                    key.GetComponent<SpriteRenderer>().enabled = true;
+                    key.GetComponent<BoxCollider2D>().enabled = true;
                     return true;
                 }
 

@@ -16,4 +16,6 @@ MonoBehaviour:
   itemID: 80
   description: "Ein Schl\xFCssel. Kann etwas aufschlie\xDFen."
   icon: {fileID: -5332339713119706758, guid: 054baa4cdcd18af4181f9b9dc6a8aa2e, type: 3}
-  possibleCombinations: []
+  possibleCombinations:
+  - otherItemID: 76
+    resultItem: {fileID: 11400000, guid: ec72a14552d9b574ea65cea610172a4f, type: 2}

@@ -39,7 +39,7 @@ namespace Project.Interactable.InSceneInteract
                 // CUSTOM LOGIC ----
             }
 
-            Debug.Log("Can't use this item on the Nest Door.");
+            Debug.Log("Can't use this item on the Nest Door. Dragged item: " + draggedItem.itemID);
             CursorManager.Instance.SetPutCursor();
             return false;
         }
