@@ -43,9 +43,14 @@ public class NPCMovement : MonoBehaviour
     {
         target = newTarget;
         isMoving = true;
-        animator.SetBool("Running", true); // START walk animation
+
+        if (animator != null)
+        {
+            animator.SetBool("Running", true);
+        }
     }
-    
+
+
     private void CheckSpriteLayer()
     {
         if (spriteRenderer != null)
