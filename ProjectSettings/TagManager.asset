@@ -11,6 +11,7 @@ TagManager:
   - Door
   - NPC
   - Put
+  - Vent
   layers:
   - Default
   - TransparentFX

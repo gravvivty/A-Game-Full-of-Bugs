@@ -32,7 +32,8 @@ namespace Project.Inventory
         public ItemData GetCombinationResult(int otherItemID)
         {
             Combination combination = possibleCombinations.Find(c => c.otherItemID == otherItemID);
-            return combination != null ? combination.resultItem : null;
+            return combination?.resultItem;
+
         }
     }
 }
