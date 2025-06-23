@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Project.Interactable.NPCs
 {
+    /// <summary>
+    /// Custom movement script for the Wasp NPC.
+    /// </summary>
     public class WaspMovement : MonoBehaviour
     {
         public float moveSpeed;
