@@ -35,6 +35,8 @@ namespace Project.Helper
             outlineRenderer.sprite = mainRenderer.sprite;
             outlineRenderer.sortingLayerID = mainRenderer.sortingLayerID;
             outlineRenderer.sortingOrder = mainRenderer.sortingOrder - 1;
+            outlineRenderer.flipX = mainRenderer.flipX;
+            outlineRenderer.flipY = mainRenderer.flipY;
 
             // Set initial state
             outlineRenderer.gameObject.SetActive(false);
@@ -55,7 +57,7 @@ namespace Project.Helper
                 }
             }
         }
-        
+
         // Updates outline with animations + layer
         private void LateUpdate()
         {
