@@ -7279,7 +7279,7 @@ MonoBehaviour:
   minY: -5
   maxY: 5
   minScale: 1
-  maxScale: 0.7
+  maxScale: 0.5
   player: {fileID: 2108097354}
 --- !u!1001 &2123415489
 PrefabInstance:

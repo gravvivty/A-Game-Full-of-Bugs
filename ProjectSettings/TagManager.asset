@@ -12,6 +12,7 @@ TagManager:
   - NPC
   - Put
   - Vent
+  - Wasp
   layers:
   - Default
   - TransparentFX
