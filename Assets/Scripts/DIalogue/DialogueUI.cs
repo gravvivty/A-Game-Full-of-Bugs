@@ -15,6 +15,7 @@ namespace Project.Dialogue
     {
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private Transform choicesContainer;
+        [SerializeField] private Sprite choiceButtonSprite;
 
         public void DisplayDialogue(DialogueLine dialogue)
         {
@@ -57,6 +58,7 @@ namespace Project.Dialogue
                 // Add required components
                 Button button = buttonObj.AddComponent<Button>();
                 Image buttonImage = buttonObj.AddComponent<Image>();
+                buttonImage.sprite = choiceButtonSprite;
                 VerticalLayoutGroup layoutGroup = buttonObj.AddComponent<VerticalLayoutGroup>();
                 // Setup VerticalLayoutGroup
                 layoutGroup.childControlHeight = true;
@@ -79,6 +81,7 @@ namespace Project.Dialogue
 
                 Debug.Log($"Choice {i}: {choice.Text}");
                 int choiceIndex = i;
+                button.gameObject.GetComponent<RectTransform>().sizeDelta += new Vector2(0, 35);
                 button.onClick.AddListener(() => DialogueManager.Instance.MakeChoice(choiceIndex));
             }
         }
