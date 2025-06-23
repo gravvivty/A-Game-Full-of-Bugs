@@ -149,3 +149,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemRepresentation: {fileID: 11400000, guid: 1338f7405d3864441b500dc08229497c, type: 2}
   spriteRenderer: {fileID: 6197022548036166978}
+  fire: {fileID: 0}
+  guard: {fileID: 0}
+  omi_curtain: {fileID: 0}
+  omi_panic_dialogueData: {fileID: 0}
+  guard_panic_dialogueData: {fileID: 0}
+  omi: {fileID: 0}
+  villageDoor: {fileID: 0}

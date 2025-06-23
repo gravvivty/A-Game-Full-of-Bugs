@@ -91,8 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconImage: {fileID: 1466947727857565596}
   itemData: {fileID: 0}
-  tooltip: {fileID: 226888686234678689, guid: e2b71bb105f558f46b1e4f9c4ff5d2fd, type: 3}
-  tooltipObject: {fileID: 8219456296174936467, guid: e2b71bb105f558f46b1e4f9c4ff5d2fd, type: 3}
+  tooltip: {fileID: 0}
 --- !u!225 &8283378189485621646
 CanvasGroup:
   m_ObjectHideFlags: 0
