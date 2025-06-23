@@ -7277,9 +7277,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minY: -5
-  maxY: 5
+  maxY: 3
   minScale: 1
-  maxScale: 0.7
+  maxScale: 0.4
   player: {fileID: 2108097354}
 --- !u!1001 &2123415489
 PrefabInstance:
