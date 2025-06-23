@@ -26,7 +26,7 @@ namespace Project.Interactable.InSceneInteract
                 return true;
                 // CUSTOM LOGIC ----
             }
-
+            
             Debug.Log("Can't use this item on the Door.");
             return false;
         }

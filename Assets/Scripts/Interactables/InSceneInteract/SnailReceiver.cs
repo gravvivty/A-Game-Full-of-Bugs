@@ -23,6 +23,9 @@ namespace Project.Interactable.InSceneInteract
                     InventoryManager.Instance.RemoveItem(draggedItem);
                     snailNPC.SetDialogueData(newSnailDialogue);
                     spriteRenderer.sprite = result.icon;
+
+                    Object.FindFirstObjectByType<AudioManager>().Play("motor_snail");
+
                     return true;
                 }
                 // CUSTOM LOGIC ----

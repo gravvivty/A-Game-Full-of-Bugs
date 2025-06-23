@@ -97,7 +97,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: motor_snail
     clip: {fileID: 8300000, guid: 7751d851d23005d479e861a911b8e244, type: 3}
-    volume: 0.6
+    volume: 0.24
     loop: 1
     source: {fileID: 0}
   - name: talking

@@ -188,6 +188,7 @@ namespace Project.Player
             Debug.Log($"Moving player to position: {targetPosition}");
             isMoving = true;
             currentInteractable = null; // Reset current interactable when moving to a new position
+
         }
     }
 }
