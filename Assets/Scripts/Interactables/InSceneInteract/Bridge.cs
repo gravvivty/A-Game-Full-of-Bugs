@@ -22,13 +22,13 @@ namespace Project.Interactable.InSceneInteract
 
             if (player.transform.position.y > 4)
             {
-                targetPositionLand = new Vector2(-1.7f, 1.25f);
+                targetPositionLand = new Vector2(-1.7f, -3.25f);
                 Debug.Log("Moving player to land position: " + targetPositionLand);
                 playerMovement.MovePlayerTo(targetPositionLand);
             }
             else
             {
-                targetPositionTree = new Vector2(7.5f, 4.75f);
+                targetPositionTree = new Vector2(7.5f, 1.75f);
                 Debug.Log("Moving player to tree position: " + targetPositionTree);
                 playerMovement.MovePlayerTo(targetPositionTree);
             }
