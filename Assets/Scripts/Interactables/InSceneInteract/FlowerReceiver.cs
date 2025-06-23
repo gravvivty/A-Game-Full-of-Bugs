@@ -30,6 +30,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             Debug.Log("Can't use this item on the flower.");
+            Object.FindFirstObjectByType<AudioManager>().Play("wrong");
             return false;
         }
     }

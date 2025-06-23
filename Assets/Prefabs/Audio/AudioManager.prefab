@@ -67,7 +67,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: new_item
     clip: {fileID: 8300000, guid: 32e954a17d3cbe74d8c36bb847fd8a9d, type: 3}
-    volume: 0.6
+    volume: 0.2
     loop: 0
     source: {fileID: 0}
   - name: fire_buildup
@@ -101,8 +101,8 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: talking
-    clip: {fileID: 8300000, guid: c14c0131b291aef4f91088fcf6b2ead5, type: 3}
-    volume: 0.6
+    clip: {fileID: 8300000, guid: fdeaf52ecfd38714293d55c7ebff8916, type: 3}
+    volume: 0.33
     loop: 1
     source: {fileID: 0}
   - name: scene_transition
@@ -122,6 +122,6 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: wrong
     clip: {fileID: 8300000, guid: 3654f169e39f5be459c0184dafd9ff4b, type: 3}
-    volume: 0.2
+    volume: 0.06
     loop: 0
     source: {fileID: 0}

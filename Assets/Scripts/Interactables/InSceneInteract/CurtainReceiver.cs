@@ -46,6 +46,7 @@ namespace Project.Interactable.InSceneInteract
                     }
                     // CUSTOM LOGIC ----
                     Debug.Log("Can't use this item on the Curtain.");
+                    Object.FindFirstObjectByType<AudioManager>().Play("wrong");
                 }
             }
             return false;

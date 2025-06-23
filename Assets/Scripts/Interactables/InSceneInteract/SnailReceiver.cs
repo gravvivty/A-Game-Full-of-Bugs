@@ -32,6 +32,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             Debug.Log("Can't use this item on the Snail.");
+            Object.FindFirstObjectByType<AudioManager>().Play("wrong");
             return false;
         }
     }
