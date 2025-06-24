@@ -48,6 +48,8 @@ namespace Project.Player
                 if (isMoving)
                 {
                     isMoving = false;
+                    
+                        FindFirstObjectByType<AudioManager>().Stop("walking");
                 }
             }
         }
@@ -73,6 +75,8 @@ namespace Project.Player
                     currentInteractable = null;
                     isMoving = true;
                     ignoreGroundCheck = false;
+
+                    FindFirstObjectByType<AudioManager>().Play("walking");
                 }
                 else if (gameObjectHit != null && gameObjectHit.GetComponent<Interactables>() != null)
                 {
@@ -84,10 +88,13 @@ namespace Project.Player
                     if (IsNearGround(gameObjectHit.transform))
                     {
                         isMoving = true;
+                        FindFirstObjectByType<AudioManager>().Play("walking");
+
                     }
                     else if (!interactable.CompareTag("Item"))
                     {
                         isMoving = true;
+                        FindFirstObjectByType<AudioManager>().Play("walking");
                     }
                     else
                     {
@@ -108,11 +115,14 @@ namespace Project.Player
                     if (distanceToTarget <= minDistanceToInteractable)
                     {
                         isMoving = false;
+                        FindFirstObjectByType<AudioManager>().Stop("walking");
                     }
                 }
                 else if ((Vector2)transform.position == targetPosition)
                 {
                     isMoving = false;
+                    FindFirstObjectByType<AudioManager>().Stop("walking");
+
                     Debug.Log("Reached target position: " + targetPosition);
                     if (ignoreGroundCheck && currentInteractable == null)
                     {

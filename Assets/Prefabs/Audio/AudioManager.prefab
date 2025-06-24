@@ -56,8 +56,8 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: door
-    clip: {fileID: 8300000, guid: 63ee038fbffa2f74fa2149ab25bb77dd, type: 3}
-    volume: 0.6
+    clip: {fileID: 8300000, guid: 36e58b65bcb87194da1ae022296149e9, type: 3}
+    volume: 0.239
     loop: 0
     source: {fileID: 0}
   - name: button
@@ -67,7 +67,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: new_item
     clip: {fileID: 8300000, guid: 32e954a17d3cbe74d8c36bb847fd8a9d, type: 3}
-    volume: 0.2
+    volume: 0.145
     loop: 0
     source: {fileID: 0}
   - name: fire_buildup
@@ -111,8 +111,8 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: walking
-    clip: {fileID: 8300000, guid: 58c28ef580966b94981764ee12cccb09, type: 3}
-    volume: 0.6
+    clip: {fileID: 8300000, guid: f82c15292ef9a0748b26a0bc3bdb8f4d, type: 3}
+    volume: 0.453
     loop: 1
     source: {fileID: 0}
   - name: wasp_flying
