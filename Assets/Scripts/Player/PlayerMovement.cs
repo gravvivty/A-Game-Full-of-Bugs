@@ -21,6 +21,7 @@ namespace Project.Player
         private Vector2 targetPosition;
         private GameObject currentInteractable;
         private Rigidbody2D rb;
+        public bool allowInput = true;
         public bool ignoreGroundCheck = false;
 
 
@@ -36,6 +37,10 @@ namespace Project.Player
         // Update is called once per frame
         void Update()
         {
+            if (allowInput)
+            {
+                HandleClickInput();
+            }
             HandleMovement();
             CheckSpriteLayer();
         }
@@ -51,14 +56,8 @@ namespace Project.Player
                 }
             }
         }
-
-
-        /// <summary>
-        /// Handles the movement of the player if we are clicking on "Ground".
-        /// It will continously move the player towards the click position until the player reaches it.
-        /// Unless the player clicks on an interactable object, in which case it will stop moving once close enough.
-        /// </summary>
-        private void HandleMovement()
+        
+        private void HandleClickInput()
         {
             GameObject gameObjectHit = mouseRaycast.GetGameObject();
             bool isGround = gameObjectHit != null && gameObjectHit.CompareTag("Ground");
@@ -96,12 +95,21 @@ namespace Project.Player
                     }
                 }
             }
+        }
 
+
+        /// <summary>
+        /// Handles the movement of the player if we are clicking on "Ground".
+        /// It will continously move the player towards the click position until the player reaches it.
+        /// Unless the player clicks on an interactable object, in which case it will stop moving once close enough.
+        /// </summary>
+        private void HandleMovement()
+        {
             if (isMoving)
             {
                 Vector2 currentPosition = transform.position;
                 transform.position = Vector2.MoveTowards(currentPosition, targetPosition, moveSpeed * Time.deltaTime);
-                // Check if we should stop based on the type of target
+        
                 if (currentInteractable != null)
                 {
                     float distanceToTarget = Vector2.Distance(transform.position, targetPosition);
