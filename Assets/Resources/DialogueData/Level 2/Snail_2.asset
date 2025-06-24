@@ -34,5 +34,5 @@ MonoBehaviour:
     - Type: 1
       Item: {fileID: 0}
       Amount: 0
-      SceneToLoad: Level_3
+      SceneToLoad: Level_3_Branch
       isGiven: 0

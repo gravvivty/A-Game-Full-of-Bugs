@@ -43,7 +43,7 @@ namespace Project.Interactable.InSceneInteract
 
                 if (spriteRenderer != null && draggedItem.itemID == 56 && honeyCount >= 3)
                 {
-                    Vector3 mirrorPosition = new Vector2(-1.7f, -4.5f);
+                    Vector3 mirrorPosition = new Vector2(-1.7f, -7.6f);
                     player.GetComponent<PlayerMovement>().MovePlayerTo(mirrorPosition);
                     if (player.transform.position != mirrorPosition)
                     {
