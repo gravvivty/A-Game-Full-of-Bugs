@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Project.Inventory;
+using Project.Audio;
 using TMPro;
 using UnityEditor;
 
@@ -170,7 +171,7 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         else
         {
             Debug.LogWarning($"Cannot combine {droppedSlot.itemData.itemName} with {itemData.itemName}.");
-            FindFirstObjectByType<AudioManager>().Play("wrong");
+            FindFirstObjectByType<CustomAudioManager>().Play("wrong");
         }
 
         // Ensure drag image is hidden after combination attempt

@@ -1,5 +1,6 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using Project.Audio;
 
 public class EscapeMenu : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class EscapeMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            FindFirstObjectByType<AudioManager>().Play("button");
+            FindFirstObjectByType<CustomAudioManager>().Play("button");
             ToggleMenu();
         }
     }
@@ -50,8 +51,8 @@ public class EscapeMenu : MonoBehaviour
 
     public void OnQuitButtonClicked()
     {
-        mainPanel.SetActive(false);         // Escape-Menü ausblenden
-        confirmPanel.SetActive(true);       // Bestätigungsfenster einblenden
+        mainPanel.SetActive(false);         // Escape-Menï¿½ ausblenden
+        confirmPanel.SetActive(true);       // Bestï¿½tigungsfenster einblenden
     }
 
 
@@ -63,9 +64,9 @@ public class EscapeMenu : MonoBehaviour
 
     public void OnConfirmNo()
     {
-        confirmPanel.SetActive(false);      // Bestätigungsfenster ausblenden
-        mainPanel.SetActive(true);          // Escape-Menü wieder anzeigen
+        confirmPanel.SetActive(false);      // Bestï¿½tigungsfenster ausblenden
+        mainPanel.SetActive(true);          // Escape-Menï¿½ wieder anzeigen
 
-        FindFirstObjectByType<AudioManager>().Play("button");
+        FindFirstObjectByType<CustomAudioManager>().Play("button");
     }
 }

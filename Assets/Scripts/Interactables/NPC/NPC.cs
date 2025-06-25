@@ -3,6 +3,7 @@ using UnityEngine;
 using Project.Dialogue;
 using Project.Dialogue.Data;
 using UnityEngine.AI;
+using Project.Audio;
 
 namespace Project.Interactable.NPCs
 {
@@ -23,7 +24,7 @@ namespace Project.Interactable.NPCs
             if (animator != null)
             {
                 animator.SetBool("Talking", true);
-                FindFirstObjectByType<AudioManager>().Play("talking");
+                FindFirstObjectByType<CustomAudioManager>().Play("talking");
             }
         }
 
@@ -31,7 +32,7 @@ namespace Project.Interactable.NPCs
         {
             if (animator != null)
             {
-                FindFirstObjectByType<AudioManager>().Stop("talking");
+                FindFirstObjectByType<CustomAudioManager>().Stop("talking");
                 animator.SetBool("Talking", false);
             }
         }

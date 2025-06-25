@@ -6512,7 +6512,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4355555884341890984, guid: 4e472b7da8c39164ca06e00da344b36e, type: 3}
       propertyPath: m_Name
-      value: AudioManager
+      value: CustomAudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 7120116205162137649, guid: 4e472b7da8c39164ca06e00da344b36e, type: 3}
       propertyPath: m_LocalPosition.x

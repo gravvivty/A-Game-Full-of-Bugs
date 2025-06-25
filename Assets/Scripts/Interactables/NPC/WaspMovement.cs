@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using Project.Inventory;
 using Project.Dialogue;
+using Project.Audio;
 
 namespace Project.Interactable.NPCs
 {
@@ -75,7 +76,7 @@ namespace Project.Interactable.NPCs
                         // Reached end of path
                         isMoving = false;
                         animator.SetBool("Running", false);
-                        FindFirstObjectByType<AudioManager>().Stop("wasp_flying");
+                        FindFirstObjectByType<CustomAudioManager>().Stop("wasp_flying");
                     }
                 }
 
@@ -91,7 +92,7 @@ namespace Project.Interactable.NPCs
                 target = pathTargets[currentTargetIndex];
                 isMoving = true;
                 animator.SetBool("Running", true);
-                FindFirstObjectByType<AudioManager>().Play("wasp_flying");
+                FindFirstObjectByType<CustomAudioManager>().Play("wasp_flying");
             }
         }
 

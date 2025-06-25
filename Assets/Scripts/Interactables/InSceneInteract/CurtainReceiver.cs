@@ -4,6 +4,7 @@ using Project.Interactable.NPCs;
 using Project.Inventory;
 using Project.Player;
 using UnityEngine;
+using Project.Audio;
 
 namespace Project.Interactable.InSceneInteract
 {
@@ -51,7 +52,7 @@ namespace Project.Interactable.InSceneInteract
                     }
                     // CUSTOM LOGIC ----
                     Debug.Log("Can't use this item on the Curtain.");
-                    Object.FindFirstObjectByType<AudioManager>().Play("wrong");
+                    Object.FindFirstObjectByType<CustomAudioManager>().Play("wrong");
                 }
             }
             return false;

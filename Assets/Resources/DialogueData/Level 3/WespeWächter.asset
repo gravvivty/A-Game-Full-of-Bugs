@@ -36,4 +36,9 @@ MonoBehaviour:
       Item: {fileID: 0}
       Amount: 0
       SceneToLoad: Level_3_Hive
+      delayToLoad: 3
+      AnimationToPlay: 
+      ObjectToRemove: {fileID: 0}
+      RemovePlayer: 0
+      MoveToPosition: {x: 0, y: 0}
       isGiven: 0

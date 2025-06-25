@@ -1,11 +1,13 @@
 using Project.Helper;
 using Project.Inventory;
 using UnityEngine;
+using Project.Audio;
 
 namespace Project.Interactable.InSceneInteract
 {
     public class NestDoorReceiver : ItemReceiver
     {
+        [SerializeField] private GameObject hatch;
         [SerializeField] private GameObject NestDoorClosed;
         [SerializeField] private GameObject NestDoorOpen;
         [SerializeField] private GameObject GroundNestDoorClosed;
@@ -33,6 +35,8 @@ namespace Project.Interactable.InSceneInteract
                     GroundNestDoorClosed.SetActive(false);
                     GroundNestDoorOpen.SetActive(true);
                     NestDoorClosed.SetActive(false);
+                    hatch.GetComponent<BoxCollider2D>().enabled = true;
+
                     return true;
                 }
 
@@ -40,7 +44,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             Debug.Log("Can't use this item on the Nest Door. Dragged item: " + draggedItem.itemID);
-            FindFirstObjectByType<AudioManager>().Play("wrong");
+            FindFirstObjectByType<CustomAudioManager>().Play("wrong");
             CursorManager.Instance.SetPutCursor();
             return false;
         }

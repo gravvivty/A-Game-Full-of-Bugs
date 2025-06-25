@@ -1,5 +1,6 @@
 using Project.Interactable;
 using UnityEngine;
+using Project.Audio;
 
 namespace Project.Interactable.VentSystem
 {
@@ -8,7 +9,7 @@ namespace Project.Interactable.VentSystem
         protected override void Interact()
         {
             VentTeleportSystem.Instance.EnterVent(gameObject);
-            FindFirstObjectByType<AudioManager>().Play("vent");
+            FindFirstObjectByType<CustomAudioManager>().Play("vent");
         }
     }
 }

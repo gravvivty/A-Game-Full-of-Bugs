@@ -5,6 +5,7 @@ using Project.Inventory;
 using Project.Player;
 using Unity.VisualScripting;
 using UnityEngine;
+using Project.Audio;
 
 namespace Project.Interactable.InSceneInteract
 {
@@ -57,7 +58,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             Debug.Log("Can't use this item on the table.");
-            Object.FindFirstObjectByType<AudioManager>().Play("wrong");
+            Object.FindFirstObjectByType<CustomAudioManager>().Play("wrong");
             return false;
         }
 

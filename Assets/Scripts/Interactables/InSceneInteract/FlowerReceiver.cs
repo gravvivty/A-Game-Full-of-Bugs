@@ -1,6 +1,7 @@
 using Project.Helper;
 using Project.Inventory;
 using UnityEngine;
+using Project.Audio;
 
 namespace Project.Interactable.InSceneInteract
 {
@@ -30,7 +31,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             Debug.Log("Can't use this item on the flower.");
-            Object.FindFirstObjectByType<AudioManager>().Play("wrong");
+            Object.FindFirstObjectByType<CustomAudioManager>().Play("wrong");
             return false;
         }
     }

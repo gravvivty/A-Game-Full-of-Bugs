@@ -3,6 +3,7 @@ using Project.Dialogue.Data;
 using Project.Interactable.NPCs;
 using Project.Inventory;
 using UnityEngine;
+using Project.Audio;
 
 namespace Project.Interactable.InSceneInteract
 {
@@ -17,7 +18,7 @@ namespace Project.Interactable.InSceneInteract
             {
                 ItemData result = draggedItem.GetCombinationResult(itemRepresentation.itemID);
                 Debug.Log($"Combined {draggedItem.itemName} with {itemRepresentation.itemName} to get {result.itemName}");
-                
+
                 // CUSTOM LOGIC -----
                 if (spriteRenderer != null && draggedItem.itemID == 59)
                 {
@@ -25,13 +26,13 @@ namespace Project.Interactable.InSceneInteract
                     cutRope.SetActive(true);
                     PlayerPrefs.SetInt("isRopeCut", 1);
                     PlayerPrefs.Save();
-                    
+
                     gameObject.SetActive(false);
                     return true;
                 }
                 // CUSTOM LOGIC ----
                 Debug.Log("Can't use this item on the Rope.");
-                FindFirstObjectByType<AudioManager>().Play("wrong");
+                FindFirstObjectByType<CustomAudioManager>().Play("wrong");
             }
             return false;
         }

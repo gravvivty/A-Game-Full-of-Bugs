@@ -2,6 +2,7 @@ using Project.Dialogue.Data;
 using Project.Interactable.NPCs;
 using Project.Inventory;
 using UnityEngine;
+using Project.Audio;
 
 namespace Project.Interactable.InSceneInteract
 {
@@ -25,7 +26,7 @@ namespace Project.Interactable.InSceneInteract
                     spriteRenderer.sprite = result.icon;
                     snailNPC.GetComponent<Animator>().SetBool("Cracked", true);
 
-                    Object.FindFirstObjectByType<AudioManager>().Play("motor_snail");
+                    Object.FindFirstObjectByType<CustomAudioManager>().Play("motor_snail");
 
                     return true;
                 }
@@ -33,7 +34,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             Debug.Log("Can't use this item on the Snail.");
-            Object.FindFirstObjectByType<AudioManager>().Play("wrong");
+            Object.FindFirstObjectByType<CustomAudioManager>().Play("wrong");
             return false;
         }
     }
