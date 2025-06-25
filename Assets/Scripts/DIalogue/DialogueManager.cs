@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Project.Interactable.NPCs;
 using Project.Inventory;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 namespace Project.Dialogue
 {
@@ -128,10 +129,39 @@ namespace Project.Dialogue
                         }
                         break;
                     case RewardType.SceneToLoad:
-                        SceneManager.LoadScene(reward.SceneToLoad);
+                        StartCoroutine(DelaySceneLoad(reward.SceneToLoad, reward.delayToLoad));
+                        break;
+                    case RewardType.AnimationToPlay:
+                        if (currentSpeakingNPC != null && currentSpeakingNPC.GetComponent<Animator>() != null)
+                        {
+                            currentSpeakingNPC.GetComponent<Animator>().SetBool(reward.AnimationToPlay, true);
+                            reward.isGiven = true; // Mark the reward as given
+                        }
+                        break;
+                    case RewardType.ObjectToRemove:
+                        GameObject objectToRemove = reward.RemovePlayer ? GameObject.FindGameObjectWithTag("Player") : reward.ObjectToRemove;
+                        if (objectToRemove != null)
+                        {
+                            objectToRemove.SetActive(false);
+                            reward.isGiven = true; // Mark the reward as given
+                        }
+                        break;
+                    case RewardType.MoveToAnotherSpot:
+                        if (currentSpeakingNPC != null)
+                        {
+                            currentSpeakingNPC.GetComponent<NPCMovement>().WalkTo(reward.MoveToPosition);
+                            reward.isGiven = true; // Mark the reward as given
+                        }
                         break;
                 }
             }
         }
+
+        private IEnumerator DelaySceneLoad(string sceneName, float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            SceneManager.LoadScene(sceneName);
+        }
+
     }
 }

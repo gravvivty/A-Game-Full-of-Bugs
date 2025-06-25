@@ -52,6 +52,11 @@ namespace Project.Dialogue.Data
         public ItemData Item;
         public int Amount;
         public string SceneToLoad;
+        public float delayToLoad;
+        public string AnimationToPlay;
+        public GameObject ObjectToRemove;
+        public bool RemovePlayer = false;
+        public Vector2 MoveToPosition;
         public bool isGiven = false;
     }
 
@@ -70,6 +75,9 @@ namespace Project.Dialogue.Data
     public enum RewardType
     {
         Item,
-        SceneToLoad
+        SceneToLoad,
+        AnimationToPlay,
+        ObjectToRemove,
+        MoveToAnotherSpot
     }
 }

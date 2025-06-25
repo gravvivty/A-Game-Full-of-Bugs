@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Project.Inventory;
+using Project.Dialogue;
 
 namespace Project.Interactable.NPCs
 {
@@ -17,6 +19,8 @@ namespace Project.Interactable.NPCs
         private Rigidbody2D rb;
         [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private float valueAboveGround = 0f;
+        [SerializeField] private BoxCollider2D playerDetectionCollider;
+        private bool playerDetected = false;
 
         void Start()
         {
@@ -32,6 +36,24 @@ namespace Project.Interactable.NPCs
 
         void Update()
         {
+
+            if (!playerDetected)
+            {
+                DetectPlayer(); // Check for player detection
+            }
+            else
+            {
+                foreach (var item in InventoryManager.Instance.GetAllItems())
+                {
+                    if (item.itemID is 56 or 59)
+                    {
+                        continue; // Skip items that should not be removed
+                    }
+                    Debug.Log($"Removing item {item.itemName} from inventory because player is detected.");
+                    InventoryManager.Instance.RemoveItem(item);
+                }
+            }
+
             if (isMoving)
             {
                 Vector2 direction = (target - rb.position).normalized;
@@ -108,6 +130,26 @@ namespace Project.Interactable.NPCs
                 else
                 {
                     spriteRenderer.sortingLayerID = SortingLayer.NameToID("PlayerBelow");
+                }
+            }
+        }
+
+        private void DetectPlayer()
+        {
+            Collider2D[] colliders = Physics2D.OverlapBoxAll(playerDetectionCollider.bounds.center, playerDetectionCollider.bounds.size, 0f);
+            foreach (var collider in colliders)
+            {
+                if (collider.CompareTag("Player"))
+                {
+                    // Player detected, you can add logic here
+                    Debug.Log("Player detected by Wasp NPC.");
+                    playerDetected = true;
+                    NPC npcComponent = gameObject.GetComponent<NPC>();
+                    if (npcComponent != null && npcComponent.dialogueData != null)
+                    {
+                        // Start dialogue immediately through DialogueManager
+                        DialogueManager.Instance.StartDialogue(npcComponent.dialogueData, npcComponent.initialDialogueID, npcComponent);
+                    }
                 }
             }
         }

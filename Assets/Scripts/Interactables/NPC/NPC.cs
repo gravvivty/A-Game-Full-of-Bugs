@@ -8,8 +8,8 @@ namespace Project.Interactable.NPCs
 {
     public class NPC : Interactables
     {
-        [SerializeField] private DialogueData dialogueData;
-        [SerializeField] private string initialDialogueID;
+        [SerializeField] public DialogueData dialogueData;
+        [SerializeField] public string initialDialogueID;
         [SerializeField] private Animator animator;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created

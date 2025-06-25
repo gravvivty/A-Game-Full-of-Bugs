@@ -13,6 +13,7 @@ namespace Project.Interactable.VentSystem
         private bool awaitingDestination = false;
         private SpriteRenderer playerSprite;
         private Collider2D playerCollider;
+        [SerializeField] private GameObject waspDetectedText;
 
         private float teleportCooldown = 0f;
         private const float teleportCooldownTime = 0.2f;
@@ -104,6 +105,7 @@ namespace Project.Interactable.VentSystem
             }
 
             // Begin venting
+            waspDetectedText.SetActive(false);
             playerSprite.enabled = false;
             playerCollider.enabled = false;
             awaitingDestination = true;
@@ -122,11 +124,25 @@ namespace Project.Interactable.VentSystem
                 float distance = Vector2.Distance(position, wasp.transform.position);
                 if (distance <= detectionRadius && wasp.GetComponent<Animator>().GetBool("Blinded") == false)
                 {
+                    // Show warning text if wasp is detected
+                    if (waspDetectedText != null)
+                    {
+                        waspDetectedText.SetActive(true);
+                        StartCoroutine(HideWaspDetectedText());
+                    }
                     return true;
                 }
             }
 
             return false;
+        }
+        private IEnumerator HideWaspDetectedText()
+        {
+            yield return new WaitForSeconds(2f);
+            if (waspDetectedText != null)
+            {
+                waspDetectedText.SetActive(false);
+            }
         }
     }
 }

@@ -23,6 +23,7 @@ namespace Project.Interactable.InSceneInteract
                     InventoryManager.Instance.RemoveItem(draggedItem);
                     snailNPC.SetDialogueData(newSnailDialogue);
                     spriteRenderer.sprite = result.icon;
+                    snailNPC.GetComponent<Animator>().SetBool("Cracked", true);
                     return true;
                 }
                 // CUSTOM LOGIC ----
