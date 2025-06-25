@@ -34,6 +34,8 @@ namespace Project.Inventory
         {
             items.Add(itemData);
             Debug.Log($"Picked up item: {itemData.itemName} (ID: {itemData.itemID})");
+                
+            Object.FindFirstObjectByType<AudioManager>().Play("new_item");
         }
 
         /// <summary>

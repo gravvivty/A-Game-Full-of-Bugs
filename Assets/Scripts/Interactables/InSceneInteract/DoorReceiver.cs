@@ -1,6 +1,7 @@
 using Project.Inventory;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 namespace Project.Interactable.InSceneInteract
 {
@@ -21,22 +22,27 @@ namespace Project.Interactable.InSceneInteract
                 {
                     itemRepresentation = result;
                     spriteRenderer.sprite = itemRepresentation.icon;
+                    
                 }
 
                 return true;
                 // CUSTOM LOGIC ----
             }
-
+            
             Debug.Log("Can't use this item on the Door.");
+            Object.FindFirstObjectByType<AudioManager>().Play("wrong");
             return false;
         }
 
-        protected override void Interact()
+        protected override async void Interact()
         {
             if (isLocked == false)
             {
+                FindFirstObjectByType<AudioManager>().Play("door");
+                await Task.Delay(500);
                 Debug.Log("Changing Scene.");
                 SceneManager.LoadScene(sceneToLoad);
+                
                 return;
             }
         }

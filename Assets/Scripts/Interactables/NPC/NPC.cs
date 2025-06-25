@@ -23,6 +23,7 @@ namespace Project.Interactable.NPCs
             if (animator != null)
             {
                 animator.SetBool("Talking", true);
+                FindFirstObjectByType<AudioManager>().Play("talking");
             }
         }
 
@@ -30,6 +31,7 @@ namespace Project.Interactable.NPCs
         {
             if (animator != null)
             {
+                FindFirstObjectByType<AudioManager>().Stop("talking");
                 animator.SetBool("Talking", false);
             }
         }

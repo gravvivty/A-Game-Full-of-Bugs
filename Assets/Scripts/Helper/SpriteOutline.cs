@@ -7,7 +7,7 @@ namespace Project.Helper
     /// </summary>
     public class SpriteOutline : MonoBehaviour
     {
-        [SerializeField] private Color outlineColor = new Color(98, 192, 168, 1);
+        [SerializeField] private Color outlineColor = new Color(0, 1, 0, 1);
         [SerializeField] private float outlineSize = 1.05f;
 
         private SpriteRenderer outlineRenderer;

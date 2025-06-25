@@ -8,6 +8,7 @@ namespace Project.Interactable.VentSystem
         protected override void Interact()
         {
             VentTeleportSystem.Instance.EnterVent(gameObject);
+            FindFirstObjectByType<AudioManager>().Play("vent");
         }
     }
 }

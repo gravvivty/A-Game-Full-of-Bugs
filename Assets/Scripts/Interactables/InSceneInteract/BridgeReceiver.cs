@@ -31,6 +31,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             Debug.Log("Can't use this item on the bridge.");
+            Object.FindFirstObjectByType<AudioManager>().Play("wrong");
             CursorManager.Instance.SetPutCursor();
             return false;
         }

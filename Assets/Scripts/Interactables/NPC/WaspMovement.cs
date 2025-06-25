@@ -75,6 +75,7 @@ namespace Project.Interactable.NPCs
                         // Reached end of path
                         isMoving = false;
                         animator.SetBool("Running", false);
+                        FindFirstObjectByType<AudioManager>().Stop("wasp_flying");
                     }
                 }
 
@@ -90,6 +91,7 @@ namespace Project.Interactable.NPCs
                 target = pathTargets[currentTargetIndex];
                 isMoving = true;
                 animator.SetBool("Running", true);
+                FindFirstObjectByType<AudioManager>().Play("wasp_flying");
             }
         }
 

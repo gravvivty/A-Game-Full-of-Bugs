@@ -170,6 +170,7 @@ public class InventorySlotUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         else
         {
             Debug.LogWarning($"Cannot combine {droppedSlot.itemData.itemName} with {itemData.itemName}.");
+            FindFirstObjectByType<AudioManager>().Play("wrong");
         }
 
         // Ensure drag image is hidden after combination attempt

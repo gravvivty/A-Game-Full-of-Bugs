@@ -27,6 +27,7 @@ public class MainMenuUI : MonoBehaviour
 
             // Neue Szene laden
             SceneManager.LoadScene(sceneName);
+            
         }
         else
         {

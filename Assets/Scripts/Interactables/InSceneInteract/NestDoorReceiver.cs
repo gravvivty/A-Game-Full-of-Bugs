@@ -40,6 +40,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             Debug.Log("Can't use this item on the Nest Door. Dragged item: " + draggedItem.itemID);
+            FindFirstObjectByType<AudioManager>().Play("wrong");
             CursorManager.Instance.SetPutCursor();
             return false;
         }

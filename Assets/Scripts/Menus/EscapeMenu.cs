@@ -23,6 +23,7 @@ public class EscapeMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            FindFirstObjectByType<AudioManager>().Play("button");
             ToggleMenu();
         }
     }
@@ -64,5 +65,7 @@ public class EscapeMenu : MonoBehaviour
     {
         confirmPanel.SetActive(false);      // Bestätigungsfenster ausblenden
         mainPanel.SetActive(true);          // Escape-Menü wieder anzeigen
+
+        FindFirstObjectByType<AudioManager>().Play("button");
     }
 }

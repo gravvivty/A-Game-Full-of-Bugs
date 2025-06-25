@@ -24,12 +24,16 @@ namespace Project.Interactable.InSceneInteract
                     snailNPC.SetDialogueData(newSnailDialogue);
                     spriteRenderer.sprite = result.icon;
                     snailNPC.GetComponent<Animator>().SetBool("Cracked", true);
+
+                    Object.FindFirstObjectByType<AudioManager>().Play("motor_snail");
+
                     return true;
                 }
                 // CUSTOM LOGIC ----
             }
 
             Debug.Log("Can't use this item on the Snail.");
+            Object.FindFirstObjectByType<AudioManager>().Play("wrong");
             return false;
         }
     }
