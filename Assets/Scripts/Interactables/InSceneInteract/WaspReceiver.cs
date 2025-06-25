@@ -30,6 +30,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             Debug.Log("Can't use this item on the Nest Door.");
+            FindFirstObjectByType<AudioManager>().Play("wrong");
             CursorManager.Instance.SetPutCursor();
             return false;
         }

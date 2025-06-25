@@ -36,7 +36,6 @@ namespace Project.Scene.SceneControllerLvl1
                 fireGO.SetActive(true);
                 var fireAnimator = fireGO.GetComponent<Animator>();
                 fireAnimator.Play("FireIdle", 0, 0f);
-                Object.FindFirstObjectByType<AudioManager>().Play("fire_loop");
 
                 if (omi.activeSelf)
                 {

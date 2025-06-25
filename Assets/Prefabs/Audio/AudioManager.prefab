@@ -51,7 +51,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: cutting
-    clip: {fileID: 8300000, guid: 6bc1f743ece572f458c82bd8e2615c9c, type: 3}
+    clip: {fileID: 8300000, guid: 79f5068f15389784d83056960f0175e5, type: 3}
     volume: 0.6
     loop: 0
     source: {fileID: 0}
@@ -71,12 +71,12 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: fire_buildup
-    clip: {fileID: 8300000, guid: 86a770cffd58b1b4c8027bfa72c0ea75, type: 3}
+    clip: {fileID: 8300000, guid: a6f9033bbd4f64b41b35c991dde17844, type: 3}
     volume: 0.6
     loop: 0
     source: {fileID: 0}
   - name: fire_loop
-    clip: {fileID: 8300000, guid: 8d84e93506c018d4d862e4fe041db9a7, type: 3}
+    clip: {fileID: 8300000, guid: 79a996e81b8f5264da3eceb56895802b, type: 3}
     volume: 0.6
     loop: 1
     source: {fileID: 0}
@@ -97,7 +97,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: motor_snail
     clip: {fileID: 8300000, guid: 7751d851d23005d479e861a911b8e244, type: 3}
-    volume: 0.24
+    volume: 0.093
     loop: 1
     source: {fileID: 0}
   - name: talking
@@ -116,12 +116,22 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: wasp_flying
-    clip: {fileID: 8300000, guid: 2b35c374eb73b4d438e8db473da3d6bb, type: 3}
-    volume: 0.44
+    clip: {fileID: 8300000, guid: 7b043d4129b54a441a52cdfb3e8f25fe, type: 3}
+    volume: 0.034
     loop: 1
     source: {fileID: 0}
   - name: wrong
     clip: {fileID: 8300000, guid: 3654f169e39f5be459c0184dafd9ff4b, type: 3}
     volume: 0.06
+    loop: 0
+    source: {fileID: 0}
+  - name: vent
+    clip: {fileID: 8300000, guid: ca09c513e8afde44eb8e3e6e58ef535d, type: 3}
+    volume: 0.06
+    loop: 0
+    source: {fileID: 0}
+  - name: cutting_staff
+    clip: {fileID: 8300000, guid: ad7b196474ee6ca45a0ce00c33a2267d, type: 3}
+    volume: 0.161
     loop: 0
     source: {fileID: 0}
