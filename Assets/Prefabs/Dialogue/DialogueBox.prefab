@@ -70,29 +70,6 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'test
 
-    a
-
-    a
-
-    a
-
-    a
-
-    a
-
-    a
-
-    aa
-
-    a
-
-
-    a
-
-    a
-
-    a
-
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1db0135db4e2d142b4b44ff51fb234c, type: 2}
@@ -418,7 +395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 485, y: -372.33}
+  m_AnchoredPosition: {x: 485, y: -124.666664}
   m_SizeDelta: {x: 870, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2476675170846055970
