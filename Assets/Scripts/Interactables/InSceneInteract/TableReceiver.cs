@@ -58,7 +58,6 @@ namespace Project.Interactable.InSceneInteract
             }
 
             Debug.Log("Can't use this item on the table.");
-            Object.FindFirstObjectByType<CustomAudioManager>().Play("wrong");
             return false;
         }
 

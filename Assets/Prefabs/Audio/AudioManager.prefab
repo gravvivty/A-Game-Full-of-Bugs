@@ -101,7 +101,7 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: talking
-    clip: {fileID: 8300000, guid: fdeaf52ecfd38714293d55c7ebff8916, type: 3}
+    clip: {fileID: 8300000, guid: 387e89c759d38e247a2e68f81266b981, type: 3}
     volume: 0.33
     loop: 1
     source: {fileID: 0}
@@ -121,7 +121,7 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: wrong
-    clip: {fileID: 8300000, guid: 3654f169e39f5be459c0184dafd9ff4b, type: 3}
+    clip: {fileID: 8300000, guid: 7d438a6ab6802ee468938702398295a2, type: 3}
     volume: 0.06
     loop: 0
     source: {fileID: 0}

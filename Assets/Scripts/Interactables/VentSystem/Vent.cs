@@ -1,6 +1,7 @@
 using Project.Interactable;
 using UnityEngine;
 using Project.Audio;
+using Project.Dialogue;
 
 namespace Project.Interactable.VentSystem
 {
@@ -8,6 +9,7 @@ namespace Project.Interactable.VentSystem
     {
         protected override void Interact()
         {
+            DialogueManager.Instance.EndDialogue(); // End any ongoing dialogue when picking up an item
             VentTeleportSystem.Instance.EnterVent(gameObject);
             FindFirstObjectByType<CustomAudioManager>().Play("vent");
         }

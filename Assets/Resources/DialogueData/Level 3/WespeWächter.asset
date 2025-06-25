@@ -35,7 +35,7 @@ MonoBehaviour:
     - Type: 1
       Item: {fileID: 0}
       Amount: 0
-      SceneToLoad: Level_3_Hive
+      SceneToLoad: Level_3_Branch
       delayToLoad: 3
       AnimationToPlay: 
       ObjectToRemove: {fileID: 0}

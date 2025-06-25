@@ -65,7 +65,7 @@ namespace Project.Interactable.InSceneInteract
         private IEnumerator activateMoving()
         {
             yield return new WaitForSeconds(6f);
-            player.GetComponent<SpriteRenderer>().flipX = false;
+            player.GetComponent<SpriteRenderer>().flipX = true;
             player.GetComponent<Animator>().SetBool("Burning", true);
             yield return new WaitForSeconds(2f);
             omi_curtain.GetComponent<Animator>().SetBool("Panic", true);
@@ -84,7 +84,7 @@ namespace Project.Interactable.InSceneInteract
             Vector3 burnPosition = new Vector3(2.3f, -6f);
             yield return StartCoroutine(MovePlayerToBurnPosition(burnPosition, 1f));
             yield return new WaitForSeconds(2f);
-
+            player.GetComponent<SpriteRenderer>().flipX = true;
             ray.SetActive(true);
 
             Animator rayAnimator = ray.GetComponent<Animator>();
@@ -119,7 +119,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             // Player has arrived
-            player.GetComponent<SpriteRenderer>().flipX = false;
+            player.GetComponent<SpriteRenderer>().flipX = true;
             player.GetComponent<Animator>().SetBool("Burning", true);
 
             yield return new WaitForSeconds(waitAfterArrive);

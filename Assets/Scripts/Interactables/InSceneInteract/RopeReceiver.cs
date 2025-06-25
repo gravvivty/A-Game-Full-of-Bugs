@@ -27,7 +27,7 @@ namespace Project.Interactable.InSceneInteract
                     PlayerPrefs.SetInt("isRopeCut", 1);
                     PlayerPrefs.Save();
 
-                    gameObject.SetActive(false);
+                    Destroy(tiedRope);
                     return true;
                 }
                 // CUSTOM LOGIC ----

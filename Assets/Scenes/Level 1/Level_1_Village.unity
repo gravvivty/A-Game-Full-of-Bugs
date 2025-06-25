@@ -844,6 +844,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EscapeMenu1
       objectReference: {fileID: 0}
+    - target: {fileID: 6664500666364710750, guid: 4bd8a4cdc272e97428a045e140b79d6d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7222840089853819020, guid: 4bd8a4cdc272e97428a045e140b79d6d, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -1362,7 +1366,7 @@ GameObject:
   - component: {fileID: 477895144}
   - component: {fileID: 477895143}
   m_Layer: 0
-  m_Name: WindowToggler
+  m_Name: RopeToggler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1382,11 +1386,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mustHaveAllItems: 0
   objectsToToggle:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 809078272}
   requiredItems:
-  - {fileID: 11400000, guid: 0d3ed81abc49de14399be9a828798432, type: 2}
+  - {fileID: 11400000, guid: fd1572670fb37734d83f720f9d3b5639, type: 2}
   - {fileID: 11400000, guid: 8e09d81f270179a4481f04b90275a234, type: 2}
   - {fileID: 11400000, guid: ac97b48243cdb004e9ceb242734fcad9, type: 2}
 --- !u!212 &477895144
@@ -1649,6 +1651,10 @@ PrefabInstance:
     - target: {fileID: 5687507366923696980, guid: 0f1011fa1d87fab4fbb48455b7a2e1dc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456853360453330007, guid: 0f1011fa1d87fab4fbb48455b7a2e1dc, type: 3}
+      propertyPath: m_text
+      value: Kombiniere Items mit der Umgebung per drag n drop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2710,6 +2716,16 @@ PrefabInstance:
     - target: {fileID: 1384127486411905119, guid: 2518b93090d60414683eca98d39ce548, type: 3}
       propertyPath: m_Name
       value: SolutionText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1454856102515547567, guid: 2518b93090d60414683eca98d39ce548, type: 3}
+      propertyPath: m_text
+      value: "1.\tDie Schere aus dem Regal nehmen.\n2.\tDie Vorhangsstange nehmen
+        - damit fallen die Vorh\xE4nge \t\taus dem Fenster.\n3.\tMit dem W\xE4chter
+        reden, um zu erfahren, wie du ihn \t\t\tweglocken kannst.\n4.\tDas Seil vom
+        Brunnen abschneiden.\n5.\tBastle aus Stab, Seil und Scherbe deinen Zauberstab
+        \n\t(drag n drop items aus dem Inventar mit einander)\n6.\tMit der Oma sprechen
+        und sie von der Magie \xFCberzeugen.\n7.\tDen Zauberstab auf die Vorh\xE4nge
+        richten, um Feuer zu \t\tmachen.\n8.\tVerlasse das K\xE4ferdorf."
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5855243530287033749, guid: 2518b93090d60414683eca98d39ce548, type: 3}
@@ -4007,6 +4023,10 @@ PrefabInstance:
     - target: {fileID: 5687507366923696980, guid: 0f1011fa1d87fab4fbb48455b7a2e1dc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456853360453330007, guid: 0f1011fa1d87fab4fbb48455b7a2e1dc, type: 3}
+      propertyPath: m_text
+      value: Kombiniere Items miteinander per drag n drop im Inventar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

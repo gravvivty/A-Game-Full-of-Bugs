@@ -1012,8 +1012,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 437047041
-  m_SortingLayer: 1
+  m_SortingLayerID: 1274524367
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8a02a9a3cdee9c0468aa04610ab0b534, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1323,7 +1323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8593320479571120183, guid: e048e16b50a6e8948a4798ebfdc42706, type: 3}
       propertyPath: m_text
-      value: Ich kann die Wespe von hier nicht blenden.
+      value: 'Dieter: Ich kann die Wespe von hier nicht blenden.'
       objectReference: {fileID: 0}
     - target: {fileID: 8755000327615450880, guid: e048e16b50a6e8948a4798ebfdc42706, type: 3}
       propertyPath: m_IsActive
@@ -1877,13 +1877,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1454856102515547567, guid: 2518b93090d60414683eca98d39ce548, type: 3}
       propertyPath: m_text
-      value: "1. Den W\xE4chter oben mit dem Zauberstab blenden.\r\n2. Seinen Schl\xFCssel
-        nehmen.\r\n3. Der W\xE4chter oben ruft dann den W\xE4chter unten zur Verst\xE4rkung.\r\n4.
-        Gummib\xE4rchen und Kaugummi aus der Speisekammer nehmen.\r\n5. Nimm einen
-        Abdruck von dem  T\xFCrschloss mit dem Kaugummi.\r\n6. Schmelze das Gummib\xE4rchen
-        im Ofen.\r\n7. F\xFCge Gummimasse mit Kaugummi zusammen.\r\n8. \xD6ffne die
-        T\xFCr mit dem Gummimassenschl\xFCssel.\r\n9. \xD6ffne die Dachbodenluke
-        mit dem Schl\xFCssel und gehe nach drau\xDFen."
+      value: "1.\tDen W\xE4chter oben mit dem Zauberstab blenden.\r\n2.\tSeinen Schl\xFCssel
+        nehmen.\r\n3.\tDer W\xE4chter oben ruft dann den W\xE4chter unten zur Verst\xE4rkung.\r\n4.\tGummib\xE4rchen
+        und Kaugummi aus der Speisekammer nehmen.\r\n5.\tNimm einen Abdruck von dem 
+        T\xFCrschloss mit dem Kaugummi.\r\n6.\tSchmelze das Gummib\xE4rchen im Ofen.\r\n7.\tF\xFCge
+        Gummimasse mit Kaugummi zusammen.\r\n8.\t\xD6ffne die T\xFCr mit dem Gummimassenschl\xFCssel.\r\n9.\t\xD6ffne
+        die Dachbodenluke mit dem Schl\xFCssel und gehe nach drau\xDFen."
       objectReference: {fileID: 0}
     - target: {fileID: 1454856102515547567, guid: 2518b93090d60414683eca98d39ce548, type: 3}
       propertyPath: m_margin.w
@@ -2296,7 +2295,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1637755461
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8061936348378294171, guid: 09e987175df9efa43a0b42f08241ce50, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5108,7 +5107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8593320479571120183, guid: e048e16b50a6e8948a4798ebfdc42706, type: 3}
       propertyPath: m_text
-      value: "Ich kann da nicht hin, die Wespe w\xFCrde mich sehen."
+      value: "Dieter: Ich kann da nicht hin, die Wespe w\xFCrde mich sehen."
       objectReference: {fileID: 0}
     - target: {fileID: 8755000327615450880, guid: e048e16b50a6e8948a4798ebfdc42706, type: 3}
       propertyPath: m_IsActive
@@ -5352,7 +5351,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.5, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5362,7 +5361,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.3999977, y: 2.290701}
+  m_Size: {x: 4.3999977, y: 4.290701}
   m_EdgeRadius: 0
 --- !u!212 &1103426693
 SpriteRenderer:
@@ -5586,7 +5585,7 @@ Transform:
   m_GameObject: {fileID: 1138164211}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.384706, y: -4.2646832, z: 0}
+  m_LocalPosition: {x: -15.324769, y: -4.396543, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6654,11 +6653,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b6a946aa8760949adf191b83871a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 50
+  moveSpeed: 40
   animator: {fileID: 1393620236}
   pathTargets:
-  - {x: 1.5, y: -5}
-  - {x: 0.5, y: 4}
+  - {x: 0, y: -5}
+  - {x: 1.5, y: -3}
+  - {x: -1.5, y: 4}
   - {x: -7, y: 4}
   spriteRenderer: {fileID: 1393620237}
   valueAboveGround: 0
@@ -6749,7 +6749,7 @@ Transform:
   m_GameObject: {fileID: 1393620232}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.547261, y: -4.952597, z: 0.17477314}
+  m_LocalPosition: {x: 9.547261, y: -4.952597, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:

@@ -4,6 +4,7 @@ using Project.Interactable;
 using Unity.VisualScripting;
 using UnityEngine.EventSystems;
 using Project.Audio;
+using Project.Dialogue;
 
 namespace Project.Player
 {
@@ -70,6 +71,7 @@ namespace Project.Player
                 Debug.Log("GameObject hit: " + gameObjectHit?.name);
                 if (isGround && !EventSystem.current.IsPointerOverGameObject())
                 {
+                    DialogueManager.Instance.EndDialogue(); // End any ongoing dialogue when picking up an item
                     Debug.Log("Clicked on ground: " + gameObjectHit.name);
                     targetPosition = mouseRaycast.GetMousePosition();
                     currentInteractable = null;
@@ -81,7 +83,7 @@ namespace Project.Player
                 else if (gameObjectHit != null && gameObjectHit.GetComponent<Interactables>() != null)
                 {
                     Interactables interactable = gameObjectHit.GetComponent<Interactables>();
-
+                    DialogueManager.Instance.EndDialogue(); // End any ongoing dialogue when picking up an item
                     targetPosition = (Vector2)gameObjectHit.transform.position;
                     currentInteractable = gameObjectHit;
 

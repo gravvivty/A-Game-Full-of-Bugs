@@ -37,7 +37,6 @@ namespace Project.Interactable.NPCs
 
         void Update()
         {
-
             if (!playerDetected)
             {
                 DetectPlayer(); // Check for player detection
@@ -58,10 +57,10 @@ namespace Project.Interactable.NPCs
             if (isMoving)
             {
                 Vector2 direction = (target - rb.position).normalized;
-                rb.MovePosition(rb.position + direction * moveSpeed * Time.deltaTime);
+                float distanceToTarget = Vector2.Distance(rb.position, target);
 
-                // Check if we are close enough to stop
-                if (Vector2.Distance(rb.position, target) < 0.05f)
+                // Use a larger threshold and add a minimum movement check
+                if (distanceToTarget < 0.1f || distanceToTarget < moveSpeed * Time.deltaTime * 2f)
                 {
                     rb.MovePosition(target); // Snap to target
 
@@ -73,11 +72,14 @@ namespace Project.Interactable.NPCs
                     }
                     else
                     {
-                        // Reached end of path
-                        isMoving = false;
-                        animator.SetBool("Running", false);
-                        FindFirstObjectByType<CustomAudioManager>().Stop("wasp_flying");
+                        // Reached end of path - ensure everything stops properly
+                        StopMovement();
                     }
+                }
+                else
+                {
+                    // Only move if we're not too close to the target
+                    rb.MovePosition(rb.position + direction * moveSpeed * Time.deltaTime);
                 }
 
                 CheckSpriteLayer();
@@ -96,6 +98,18 @@ namespace Project.Interactable.NPCs
             }
         }
 
+        private void StopMovement()
+        {
+            ClearPath();
+            isMoving = false;
+            animator.SetBool("Running", false);
+            FindFirstObjectByType<CustomAudioManager>().Stop("wasp_flying");
+
+            // Ensure the rigidbody stops moving completely
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+
         public void SetPath(List<Vector2> newPath)
         {
             pathTargets = new List<Vector2>(newPath);
@@ -109,8 +123,8 @@ namespace Project.Interactable.NPCs
         public void ClearPath()
         {
             pathTargets.Clear();
-            isMoving = false;
-            animator.SetBool("Running", false);
+            currentTargetIndex = 0;
+            // Don't set isMoving = false here since StopMovement handles it
         }
 
         // Keep the old WalkTo method for backward compatibility
