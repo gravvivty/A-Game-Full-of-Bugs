@@ -31,6 +31,7 @@ namespace Project.Interactable.InSceneInteract
                 }
                 // CUSTOM LOGIC ----
                 Debug.Log("Can't use this item on the Rope.");
+                FindFirstObjectByType<AudioManager>().Play("wrong");
             }
             return false;
         }
