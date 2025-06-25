@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wespe1_Blinded
+  m_Name: Wespe_1_Idle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1652901886239645567, guid: 64512879cdeca214bb5c2b3356c7a2cc, type: 3}
+      value: {fileID: -4802411570291313897, guid: 8a05fe7b9c01b38408f21f5c66f6ebf8, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,7 +44,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1652901886239645567, guid: 64512879cdeca214bb5c2b3356c7a2cc, type: 3}
+    - {fileID: -4802411570291313897, guid: 8a05fe7b9c01b38408f21f5c66f6ebf8, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

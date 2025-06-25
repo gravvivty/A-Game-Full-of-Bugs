@@ -57,6 +57,13 @@ namespace Project.Interactable.VentSystem
 
                     if (destination != null)
                     {
+                        // Check if there are wasps near the destination vent
+                        if (IsWaspNearPosition(destination.GetTeleportPoint().position))
+                        {
+                            Debug.Log("Cannot teleport to vent, wasp nearby at destination.");
+                            return;
+                        }
+
                         player.transform.position = destination.GetTeleportPoint().position;
                         playerSprite.enabled = true;
                         playerCollider.enabled = true;
@@ -100,6 +107,26 @@ namespace Project.Interactable.VentSystem
             playerSprite.enabled = false;
             playerCollider.enabled = false;
             awaitingDestination = true;
+        }
+
+        private bool IsWaspNearPosition(Vector3 position)
+        {
+            float detectionRadius = 6f;
+
+            // Find all GameObjects with the "Wasp" tag
+            GameObject[] wasps = GameObject.FindGameObjectsWithTag("Wasp");
+
+            foreach (GameObject wasp in wasps)
+            {
+                // Check if wasp is within detection radius of the position
+                float distance = Vector2.Distance(position, wasp.transform.position);
+                if (distance <= detectionRadius && wasp.GetComponent<Animator>().GetBool("Blinded") == false)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }

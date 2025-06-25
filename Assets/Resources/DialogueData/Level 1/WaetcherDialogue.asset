@@ -31,7 +31,8 @@ MonoBehaviour:
     Rewards: []
   - SpeakerName: Holder
     DialogueID: 0_c-1
-    Text: Vergiss es, Trottel. Du darfst nicht raus.
+    Text: "Vergiss es, Trottel. Ich verlasse meinen Posten nur in Notf\xE4llen wie
+      Br\xE4nde und solange ich hier stehte, kommt niemand raus."
     Choices: []
     Conditions: []
     Rewards: []
