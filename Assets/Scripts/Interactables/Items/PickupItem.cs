@@ -1,3 +1,4 @@
+using Project.Dialogue;
 using Project.Helper;
 using Project.Inventory;
 using UnityEngine;
@@ -37,12 +38,12 @@ namespace Project.Interactable.Items
             {
                 spriteRenderer.sprite = itemData.icon;
             }
-
+            DialogueManager.Instance.EndDialogue(); // End any ongoing dialogue when picking up an item
             InventoryManager.Instance.AddItem(itemData);
-            
+
             // Reset Cursor after pickup
             CursorManager.Instance.SetNormalCursor();
-            
+
             Destroy(gameObject);
 
             // Call the UpdateInventoryUI() method to update the UI when an item is picked up

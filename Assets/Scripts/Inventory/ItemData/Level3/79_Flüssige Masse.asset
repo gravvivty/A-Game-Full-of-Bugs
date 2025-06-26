@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: "Fl\xFCssige Masse"
   itemID: 79
   description: "Eine fl\xFCssige Masse"
-  icon: {fileID: 8928529942313573666, guid: 700b69143781c2b428b55f98673714a3, type: 3}
+  icon: {fileID: 21300000, guid: 2bc1b7313ce95424ebaabc7b5caa9f29, type: 3}
   possibleCombinations:
   - otherItemID: 78
     resultItem: {fileID: 11400000, guid: c7279a0d8a11c554f9e898859053ae2d, type: 2}

@@ -4,6 +4,7 @@ using Project.Interactable.NPCs;
 using Project.Inventory;
 using Project.Player;
 using UnityEngine;
+using Project.Audio;
 
 namespace Project.Interactable.InSceneInteract
 {
@@ -18,6 +19,7 @@ namespace Project.Interactable.InSceneInteract
         public DialogueData guard_panic_dialogueData;
         public GameObject omi;
         public GameObject villageDoor;
+        public GameObject playerHomeDoor;
         public override bool TryUseItem(ItemData draggedItem)
         {
             if (PlayerPrefs.GetInt("isLit", 0) == 1)
@@ -39,9 +41,9 @@ namespace Project.Interactable.InSceneInteract
                         player.GetComponent<PlayerMovement>().allowInput = false;
 
                         StartCoroutine(activateRay());
-                        
+
                         StartCoroutine(activateMoving());
-                        
+
                         PlayerPrefs.SetInt("isLit", 1);
                         PlayerPrefs.Save();
 
@@ -50,6 +52,7 @@ namespace Project.Interactable.InSceneInteract
                     }
                     // CUSTOM LOGIC ----
                     Debug.Log("Can't use this item on the Curtain.");
+                    Object.FindFirstObjectByType<CustomAudioManager>().Play("wrong");
                 }
             }
             return false;
@@ -62,7 +65,7 @@ namespace Project.Interactable.InSceneInteract
         private IEnumerator activateMoving()
         {
             yield return new WaitForSeconds(6f);
-            player.GetComponent<SpriteRenderer>().flipX = false;
+            player.GetComponent<SpriteRenderer>().flipX = true;
             player.GetComponent<Animator>().SetBool("Burning", true);
             yield return new WaitForSeconds(2f);
             omi_curtain.GetComponent<Animator>().SetBool("Panic", true);
@@ -71,16 +74,17 @@ namespace Project.Interactable.InSceneInteract
             guard.GetComponent<NPCMovement>().WalkTo(new Vector2(-10, -3.5f));
             guard.GetComponent<NPC>().SetDialogueData(guard_panic_dialogueData);
             villageDoor.SetActive(true);
+            playerHomeDoor.GetComponent<BoxCollider2D>().enabled = false;
             player.GetComponent<Animator>().SetBool("Burning", false);
             player.GetComponent<PlayerMovement>().allowInput = true;
         }
 
         private IEnumerator activateRay()
-        { 
+        {
             Vector3 burnPosition = new Vector3(2.3f, -6f);
             yield return StartCoroutine(MovePlayerToBurnPosition(burnPosition, 1f));
             yield return new WaitForSeconds(2f);
-
+            player.GetComponent<SpriteRenderer>().flipX = true;
             ray.SetActive(true);
 
             Animator rayAnimator = ray.GetComponent<Animator>();
@@ -91,19 +95,19 @@ namespace Project.Interactable.InSceneInteract
 
             rayAnimator.SetBool("Idle", true); // Start idle loop
             yield return new WaitForSeconds(2f); // Idle for 3 seconds
-                  
+
             fire.SetActive(true);
             fire.GetComponent<Animator>().SetBool("isLit", true);
 
             rayAnimator.SetBool("Idle", false);
             rayAnimator.SetTrigger("Stop"); // Play stop animation
-            
+
             // Wait for the stop animation to finish (adjust based on your animation)
             yield return new WaitForSeconds(1f); // adjust if Stop anim length differs
 
             ray.SetActive(false); // Hide ray after animation sequence
         }
-        
+
         private IEnumerator MovePlayerToBurnPosition(Vector3 targetPosition, float waitAfterArrive = 0.5f)
         {
             player.GetComponent<PlayerMovement>().MovePlayerTo(targetPosition);
@@ -115,7 +119,7 @@ namespace Project.Interactable.InSceneInteract
             }
 
             // Player has arrived
-            player.GetComponent<SpriteRenderer>().flipX = false;
+            player.GetComponent<SpriteRenderer>().flipX = true;
             player.GetComponent<Animator>().SetBool("Burning", true);
 
             yield return new WaitForSeconds(waitAfterArrive);

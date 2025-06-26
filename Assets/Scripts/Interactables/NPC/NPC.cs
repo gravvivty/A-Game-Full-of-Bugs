@@ -3,13 +3,14 @@ using UnityEngine;
 using Project.Dialogue;
 using Project.Dialogue.Data;
 using UnityEngine.AI;
+using Project.Audio;
 
 namespace Project.Interactable.NPCs
 {
     public class NPC : Interactables
     {
-        [SerializeField] private DialogueData dialogueData;
-        [SerializeField] private string initialDialogueID;
+        [SerializeField] public DialogueData dialogueData;
+        [SerializeField] public string initialDialogueID;
         [SerializeField] private Animator animator;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -23,6 +24,7 @@ namespace Project.Interactable.NPCs
             if (animator != null)
             {
                 animator.SetBool("Talking", true);
+                FindFirstObjectByType<CustomAudioManager>().Play("talking");
             }
         }
 
@@ -30,6 +32,7 @@ namespace Project.Interactable.NPCs
         {
             if (animator != null)
             {
+                FindFirstObjectByType<CustomAudioManager>().Stop("talking");
                 animator.SetBool("Talking", false);
             }
         }

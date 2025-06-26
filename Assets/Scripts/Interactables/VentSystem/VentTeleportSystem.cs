@@ -13,6 +13,7 @@ namespace Project.Interactable.VentSystem
         private bool awaitingDestination = false;
         private SpriteRenderer playerSprite;
         private Collider2D playerCollider;
+        [SerializeField] private GameObject waspDetectedText;
 
         private float teleportCooldown = 0f;
         private const float teleportCooldownTime = 0.2f;
@@ -57,6 +58,13 @@ namespace Project.Interactable.VentSystem
 
                     if (destination != null)
                     {
+                        // Check if there are wasps near the destination vent
+                        if (IsWaspNearPosition(destination.GetTeleportPoint().position))
+                        {
+                            Debug.Log("Cannot teleport to vent, wasp nearby at destination.");
+                            return;
+                        }
+
                         player.transform.position = destination.GetTeleportPoint().position;
                         playerSprite.enabled = true;
                         playerCollider.enabled = true;
@@ -97,9 +105,44 @@ namespace Project.Interactable.VentSystem
             }
 
             // Begin venting
+            waspDetectedText.SetActive(false);
             playerSprite.enabled = false;
             playerCollider.enabled = false;
             awaitingDestination = true;
+        }
+
+        private bool IsWaspNearPosition(Vector3 position)
+        {
+            float detectionRadius = 6f;
+
+            // Find all GameObjects with the "Wasp" tag
+            GameObject[] wasps = GameObject.FindGameObjectsWithTag("Wasp");
+
+            foreach (GameObject wasp in wasps)
+            {
+                // Check if wasp is within detection radius of the position
+                float distance = Vector2.Distance(position, wasp.transform.position);
+                if (distance <= detectionRadius && wasp.GetComponent<Animator>().GetBool("Blinded") == false)
+                {
+                    // Show warning text if wasp is detected
+                    if (waspDetectedText != null)
+                    {
+                        waspDetectedText.SetActive(true);
+                        StartCoroutine(HideWaspDetectedText());
+                    }
+                    return true;
+                }
+            }
+
+            return false;
+        }
+        private IEnumerator HideWaspDetectedText()
+        {
+            yield return new WaitForSeconds(2f);
+            if (waspDetectedText != null)
+            {
+                waspDetectedText.SetActive(false);
+            }
         }
     }
 }

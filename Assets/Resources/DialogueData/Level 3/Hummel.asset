@@ -21,7 +21,7 @@ MonoBehaviour:
     - Text: Wer seid ihr denn?
       NextDialogueID: 0_c-1
       shouldBeRemoved: 1
-      isRemoved: 0
+      isRemoved: 1
       Conditions: []
     - Text: Was ist denn hier los?
       NextDialogueID: 1
@@ -46,13 +46,13 @@ MonoBehaviour:
     - Text: "Was denn f\xFCr Honigreserven?"
       NextDialogueID: 1_c-1
       shouldBeRemoved: 1
-      isRemoved: 0
+      isRemoved: 1
       Conditions: []
     - Text: Wieso zahlt ihr es diesen Wespen nicht einfach heim? Euren Honig klauen,
         das geht ja mal gar nicht!
       NextDialogueID: 1_c-2
       shouldBeRemoved: 1
-      isRemoved: 0
+      isRemoved: 1
       Conditions: []
     - Text: "Ich bin auf einer Reise bis zum Rand des Waldes und in die Lande dahinter.
         K\xF6nnt ihr mir helfen?"
@@ -94,8 +94,8 @@ MonoBehaviour:
     Rewards: []
   - SpeakerName: Herbert
     DialogueID: 2
-    Text: "Viel Gl\xFCck da drinnen, Magier. M\xF6ge ihr Nest fallen und ihre ganze
-      Gattung mit ihnen."
+    Text: "Viel gl\xFCck da drinnen, Magier. Moege ihr Nest fallen und ihre ganze
+      gattung mit ihnen."
     Choices: []
     Conditions: []
     Rewards: []

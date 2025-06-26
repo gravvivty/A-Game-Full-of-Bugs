@@ -5,6 +5,7 @@ using Project.Inventory;
 using Project.Player;
 using Unity.VisualScripting;
 using UnityEngine;
+using Project.Audio;
 
 namespace Project.Interactable.InSceneInteract
 {

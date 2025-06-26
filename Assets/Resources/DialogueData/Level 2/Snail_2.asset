@@ -35,4 +35,39 @@ MonoBehaviour:
       Item: {fileID: 0}
       Amount: 0
       SceneToLoad: Level_3_Branch
+      delayToLoad: 5
+      AnimationToPlay: 
+      ObjectToRemove: {fileID: 0}
+      RemovePlayer: 0
+      MoveToPosition: {x: 0, y: 0}
       isGiven: 0
+    - Type: 2
+      Item: {fileID: 0}
+      Amount: 0
+      SceneToLoad: Level_3_Branch
+      delayToLoad: 0
+      AnimationToPlay: Running
+      ObjectToRemove: {fileID: 0}
+      RemovePlayer: 0
+      MoveToPosition: {x: 0, y: 0}
+      isGiven: 1
+    - Type: 4
+      Item: {fileID: 0}
+      Amount: 0
+      SceneToLoad: Level_3_Branch
+      delayToLoad: 0
+      AnimationToPlay: Running
+      ObjectToRemove: {fileID: 0}
+      RemovePlayer: 0
+      MoveToPosition: {x: 12, y: 20}
+      isGiven: 1
+    - Type: 3
+      Item: {fileID: 0}
+      Amount: 0
+      SceneToLoad: Level_3_Branch
+      delayToLoad: 0
+      AnimationToPlay: Running
+      ObjectToRemove: {fileID: 0}
+      RemovePlayer: 1
+      MoveToPosition: {x: 0, y: 0}
+      isGiven: 1

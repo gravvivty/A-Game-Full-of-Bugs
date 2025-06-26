@@ -43,7 +43,10 @@ EditorBuildSettings:
     guid: d665c5a64de317b49afd083b45263aba
   - enabled: 1
     path: Assets/Scenes/Level 3/Level_3_Top.unity
-    guid: 0777374f80989ea45a0f153e396f15b5
+    guid: 27341dab776b31b4abc0867ee3a731e4
+  - enabled: 1
+    path: Assets/Scenes/CutsceneEnd.unity
+    guid: b7c53292e57d71846b2325f11701c861
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

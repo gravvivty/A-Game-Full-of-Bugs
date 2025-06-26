@@ -1,3 +1,4 @@
+using Project.Dialogue;
 using Project.Helper;
 using Project.Player;
 using UnityEngine;
@@ -19,6 +20,7 @@ namespace Project.Interactable.InSceneInteract
 
             // Set ignoreGroundCheck to true and will be maintained until reaching destination
             playerMovement.ignoreGroundCheck = true;
+            DialogueManager.Instance.EndDialogue(); // End any ongoing dialogue when picking up an item
 
             if (player.transform.position.y > 4)
             {

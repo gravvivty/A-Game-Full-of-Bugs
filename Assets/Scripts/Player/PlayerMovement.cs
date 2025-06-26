@@ -3,6 +3,8 @@ using Project.Helper;
 using Project.Interactable;
 using Unity.VisualScripting;
 using UnityEngine.EventSystems;
+using Project.Audio;
+using Project.Dialogue;
 
 namespace Project.Player
 {
@@ -53,10 +55,12 @@ namespace Project.Player
                 if (isMoving)
                 {
                     isMoving = false;
+
+                    FindFirstObjectByType<CustomAudioManager>().Stop("walking");
                 }
             }
         }
-        
+
         private void HandleClickInput()
         {
             GameObject gameObjectHit = mouseRaycast.GetGameObject();
@@ -67,26 +71,32 @@ namespace Project.Player
                 Debug.Log("GameObject hit: " + gameObjectHit?.name);
                 if (isGround && !EventSystem.current.IsPointerOverGameObject())
                 {
+                    DialogueManager.Instance.EndDialogue(); // End any ongoing dialogue when picking up an item
                     Debug.Log("Clicked on ground: " + gameObjectHit.name);
                     targetPosition = mouseRaycast.GetMousePosition();
                     currentInteractable = null;
                     isMoving = true;
                     ignoreGroundCheck = false;
+
+                    FindFirstObjectByType<CustomAudioManager>().Play("walking");
                 }
                 else if (gameObjectHit != null && gameObjectHit.GetComponent<Interactables>() != null)
                 {
                     Interactables interactable = gameObjectHit.GetComponent<Interactables>();
-
+                    DialogueManager.Instance.EndDialogue(); // End any ongoing dialogue when picking up an item
                     targetPosition = (Vector2)gameObjectHit.transform.position;
                     currentInteractable = gameObjectHit;
 
                     if (IsNearGround(gameObjectHit.transform))
                     {
                         isMoving = true;
+                        FindFirstObjectByType<CustomAudioManager>().Play("walking");
+
                     }
                     else if (!interactable.CompareTag("Item"))
                     {
                         isMoving = true;
+                        FindFirstObjectByType<CustomAudioManager>().Play("walking");
                     }
                     else
                     {
@@ -109,18 +119,21 @@ namespace Project.Player
             {
                 Vector2 currentPosition = transform.position;
                 transform.position = Vector2.MoveTowards(currentPosition, targetPosition, moveSpeed * Time.deltaTime);
-        
+
                 if (currentInteractable != null)
                 {
                     float distanceToTarget = Vector2.Distance(transform.position, targetPosition);
                     if (distanceToTarget <= minDistanceToInteractable)
                     {
                         isMoving = false;
+                        FindFirstObjectByType<CustomAudioManager>().Stop("walking");
                     }
                 }
                 else if ((Vector2)transform.position == targetPosition)
                 {
                     isMoving = false;
+                    FindFirstObjectByType<CustomAudioManager>().Stop("walking");
+
                     Debug.Log("Reached target position: " + targetPosition);
                     if (ignoreGroundCheck && currentInteractable == null)
                     {
@@ -196,6 +209,7 @@ namespace Project.Player
             Debug.Log($"Moving player to position: {targetPosition}");
             isMoving = true;
             currentInteractable = null; // Reset current interactable when moving to a new position
+
         }
     }
 }

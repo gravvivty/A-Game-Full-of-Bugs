@@ -90,6 +90,9 @@ namespace Project.Interactable
                     case "Put":
                         CursorManager.Instance.SetPutCursor();
                         break;
+                    case "Vent":
+                        CursorManager.Instance.SetVentCursor();
+                        break;
                     default:
                         CursorManager.Instance.SetNormalCursor();
                         break;

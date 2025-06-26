@@ -69,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: fzukkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+  m_text: a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1db0135db4e2d142b4b44ff51fb234c, type: 2}
   m_sharedMaterial: {fileID: 7967207676176009755, guid: f1db0135db4e2d142b4b44ff51fb234c, type: 2}
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37fca0ddc01294c42b4193d09d24aecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dialogueLines: []
 --- !u!225 &855831066285103194
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -324,7 +325,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6506976305040907897}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!114 &4320223729380382009
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,11 +12,12 @@ TagManager:
   - NPC
   - Put
   - Vent
+  - Wasp
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Wasp
   - Water
   - UI
   - 

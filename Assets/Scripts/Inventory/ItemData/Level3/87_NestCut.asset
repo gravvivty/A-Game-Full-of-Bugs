@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec2db5e5330562a498accaac6098e01a, type: 3}
+  m_Name: 87_NestCut
+  m_EditorClassIdentifier: 
+  itemName: Nest Cut
+  itemID: 87
+  description: 
+  icon: {fileID: 2140339366529452154, guid: 864c271dd5f2efe449973b90acdf6af8, type: 3}
+  possibleCombinations: []
