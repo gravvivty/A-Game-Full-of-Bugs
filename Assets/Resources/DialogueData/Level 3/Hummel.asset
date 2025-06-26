@@ -73,14 +73,14 @@ MonoBehaviour:
   - SpeakerName: Herbert
     DialogueID: 1_c-2
     Text: "Das haben wir schon oft genug selbst versucht, aber der Weg nach oben
-      ist streng bewacht und alle T\xFCren verschlossen... man m\xFCsste schon zaubern
+      ist streng bewacht und alle T\xFCren verschlossen... Man m\xFCsste schon zaubern
       k\xF6nnen, um unbeschadet bis aufs Dach des Wespennests zu kommen."
     Choices: []
     Conditions: []
     Rewards: []
   - SpeakerName: Herbert
     DialogueID: 1_c-3
-    Text: "Ich schlag dir einen Deal vor, K\xE4fer: wenn du uns hilfst, Rache an
+    Text: "Ich schlag dir einen Deal vor, K\xE4fer: Wenn du uns hilfst, Rache an
       diesen diebischen Wespen zu nehmen, fliegen wir dich zum Dank aus dem Wald
       hinaus. Was sagst du?"
     Choices:
@@ -94,8 +94,8 @@ MonoBehaviour:
     Rewards: []
   - SpeakerName: Herbert
     DialogueID: 2
-    Text: "Viel gl\xFCck da drinnen, Magier. Moege ihr Nest fallen und ihre ganze
-      gattung mit ihnen."
+    Text: "Viel gl\xFCck da drinnen, Magier. M\xF6ge ihr Nest fallen und ihre ganze
+      Gattung mit ihnen."
     Choices: []
     Conditions: []
     Rewards: []

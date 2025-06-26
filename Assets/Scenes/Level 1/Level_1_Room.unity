@@ -1223,6 +1223,10 @@ PrefabInstance:
       value: AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 6680869303689675213, guid: 4e472b7da8c39164ca06e00da344b36e, type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e467a8decc910dc429b88ba03f07cd80, type: 3}
+    - target: {fileID: 6680869303689675213, guid: 4e472b7da8c39164ca06e00da344b36e, type: 3}
       propertyPath: sounds.Array.data[6].clip
       value: 
       objectReference: {fileID: 8300000, guid: 86a770cffd58b1b4c8027bfa72c0ea75, type: 3}
@@ -2259,6 +2263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EscapeMenu1
       objectReference: {fileID: 0}
+    - target: {fileID: 7142327648247796820, guid: 4bd8a4cdc272e97428a045e140b79d6d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -469738134670642733, guid: c64e32ef58c3f1d4893184645d3e8b0d, type: 3}
     - target: {fileID: 7222840089853819020, guid: 4bd8a4cdc272e97428a045e140b79d6d, type: 3}
       propertyPath: m_fontAsset
       value: 

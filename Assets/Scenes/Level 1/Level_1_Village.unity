@@ -132,6 +132,10 @@ PrefabInstance:
       value: AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 6680869303689675213, guid: 4e472b7da8c39164ca06e00da344b36e, type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e467a8decc910dc429b88ba03f07cd80, type: 3}
+    - target: {fileID: 6680869303689675213, guid: 4e472b7da8c39164ca06e00da344b36e, type: 3}
       propertyPath: sounds.Array.data[13].clip
       value: 
       objectReference: {fileID: 8300000, guid: f82c15292ef9a0748b26a0bc3bdb8f4d, type: 3}
@@ -194,7 +198,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2277600625659166847, guid: 5f722b1f710fb664fbe0a2f4ce7aa6b0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 232.57
+      value: 139.54
       objectReference: {fileID: 0}
     - target: {fileID: 3923889815095659363, guid: 5f722b1f710fb664fbe0a2f4ce7aa6b0, type: 3}
       propertyPath: m_IsActive
@@ -297,6 +301,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6862057787933118995, guid: 5f722b1f710fb664fbe0a2f4ce7aa6b0, type: 3}
+      propertyPath: m_text
+      value: 'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862057787933118995, guid: 5f722b1f710fb664fbe0a2f4ce7aa6b0, type: 3}
       propertyPath: m_fontColor.b
       value: 1
       objectReference: {fileID: 0}
@@ -310,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6862057787933118995, guid: 5f722b1f710fb664fbe0a2f4ce7aa6b0, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4288453788
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
