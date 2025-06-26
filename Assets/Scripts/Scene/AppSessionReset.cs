@@ -15,6 +15,7 @@ namespace Project.Scene
             
             PlayerPrefs.DeleteKey("tutorialDrag");
             PlayerPrefs.DeleteKey("tutorialCombine");
+            PlayerPrefs.DeleteKey("tutorialWalk");
 
             // Reset all DialogueData ScriptableObjects
             List<DialogueData> allDialogueData = new List<DialogueData>();

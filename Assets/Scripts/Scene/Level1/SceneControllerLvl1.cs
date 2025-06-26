@@ -63,13 +63,14 @@ namespace Project.Scene.SceneControllerLvl1
                 !HasRequiredItem(55) &&
                 !HasRequiredItem(56))
             {
-               tiedRope?.SetActive(false);
-               cutRope?.SetActive(true);
-            }else if (PlayerPrefs.GetInt("isRopeCut", 0) == 1 &&
-                HasRequiredItem(52) ||
-                HasRequiredItem(54) ||
-                HasRequiredItem(55) ||
-                HasRequiredItem(56))
+                tiedRope?.SetActive(false);
+                cutRope?.SetActive(true);
+            }
+            else if (PlayerPrefs.GetInt("isRopeCut", 0) == 1 &&
+                     (HasRequiredItem(52) ||
+                      HasRequiredItem(54) ||
+                      HasRequiredItem(55) ||
+                      HasRequiredItem(56)))
             {
                 tiedRope?.SetActive(false);
                 cutRope?.SetActive(false);
