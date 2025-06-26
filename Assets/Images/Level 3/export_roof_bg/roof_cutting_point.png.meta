@@ -117,6 +117,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -309,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      roof_cutting_point_0: 2140339366529452154
+      roof_cutting_point_1: 3164506206804465634
+      roof_cutting_point_2: 1246159701977499372
+      roof_cutting_point_3: 5334513111225165727
+      roof_cutting_point_4: -3327321559693214306
+      roof_cutting_point_5: -1009496288526660795
+      roof_cutting_point_6: -4907096845567928504
+      roof_cutting_point_7: 8267433806293346872
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
