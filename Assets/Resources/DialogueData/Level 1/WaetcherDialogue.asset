@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueLines:
   - SpeakerName: Holder
     DialogueID: 0
-    Text: Was willst du, Dieter?
+    Text: Was willst du, Buzz?
     Choices:
     - Text: "Beseite, W\xE4chter! Ich verlasse nun das K\xE4ferdorf."
       NextDialogueID: 0_c-1
@@ -33,7 +33,12 @@ MonoBehaviour:
     DialogueID: 0_c-1
     Text: "Vergiss es, Trottel. Ich verlasse meinen Posten nur in Notf\xE4llen wie
       Br\xE4nde und solange ich hier stehte, kommt niemand raus."
-    Choices: []
+    Choices:
+    - Text: "Vergiss es, du bist meiner Worte eh nicht w\xFCrdig."
+      NextDialogueID: 0_c-2
+      shouldBeRemoved: 0
+      isRemoved: 0
+      Conditions: []
     Conditions: []
     Rewards: []
   - SpeakerName: Holder

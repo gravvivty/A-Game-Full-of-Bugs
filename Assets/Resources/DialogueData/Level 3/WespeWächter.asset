@@ -19,7 +19,7 @@ MonoBehaviour:
 
 '
     Choices:
-    - Text: "WARTE ICH KANN DAS ERKL\xC4REN"
+    - Text: "WARTE! ICH KANN DAS ERKL\xC4REN"
       NextDialogueID: 1
       shouldBeRemoved: 0
       isRemoved: 0

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      app_icon_kaefer_0: -3471036024712735895
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

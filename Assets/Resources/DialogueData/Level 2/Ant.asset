@@ -23,7 +23,7 @@ MonoBehaviour:
     - Text: Wer bist du denn?
       NextDialogueID: 0_c-1
       shouldBeRemoved: 1
-      isRemoved: 0
+      isRemoved: 1
       Conditions: []
     - Text: "Warum sollte ich deinen Stock kaufen? Hier liegen \xFCberall welche!"
       NextDialogueID: 0_c-2
@@ -48,7 +48,23 @@ MonoBehaviour:
     Text: I see, du bist neu an der Wald Street. Mein Name ist Justus-Maximilian,
       ich bin Antpreneur und Broker am lokalen Stock Market, wie du sicher schon
       erkannt hast.
-    Choices: []
+    Choices:
+    - Text: "Warum sollte ich deinen Stock kaufen? Hier liegen \xFCberall welche!"
+      NextDialogueID: 0_c-2
+      shouldBeRemoved: 1
+      isRemoved: 0
+      Conditions: []
+    - Text: Das versteh ich alles nicht. Wieso genau ist der Stock jetzt so wertvoll?
+        Nur, weil du es behauptest?
+      NextDialogueID: 0_c-3
+      shouldBeRemoved: 1
+      isRemoved: 1
+      Conditions: []
+    - Text: "Was soll der Stock denn \xFCberhaupt kosten?"
+      NextDialogueID: 0_c-4
+      shouldBeRemoved: 0
+      isRemoved: 0
+      Conditions: []
     Conditions: []
     Rewards: []
   - SpeakerName: Ameise
@@ -57,7 +73,23 @@ MonoBehaviour:
       Der intrinsische Wert dieses Stocks liegt weit \xFCber seinem Materialpreis!
       Mein Stock hat eine zertifizierte Tragkraft, gepr\xFCft von unabh\xE4ngigen
       M\xE4rkten. Du investierst hier in eine wachsende Branche!"
-    Choices: []
+    Choices:
+    - Text: Wer bist du denn?
+      NextDialogueID: 0_c-1
+      shouldBeRemoved: 1
+      isRemoved: 0
+      Conditions: []
+    - Text: Das versteh ich alles nicht. Wieso genau ist der Stock jetzt so wertvoll?
+        Nur, weil du es behauptest?
+      NextDialogueID: 0_c-3
+      shouldBeRemoved: 1
+      isRemoved: 1
+      Conditions: []
+    - Text: "Was soll der Stock denn \xFCberhaupt kosten?"
+      NextDialogueID: 0_c-4
+      shouldBeRemoved: 0
+      isRemoved: 0
+      Conditions: []
     Conditions: []
     Rewards: []
   - SpeakerName: Ameise
@@ -65,18 +97,54 @@ MonoBehaviour:
     Text: "Bro, du h\xE4ngst noch in der K\xE4ferwelt fest! Hier, das hier bringt
       dein Mindset auf\u2019s n\xE4chste Level. Ein echter Geheimtipp unter Investoren.
       Aber teil es dir gut ein am Anfang!"
-    Choices: []
+    Choices:
+    - Text: Wer bist du denn?
+      NextDialogueID: 0_c-1
+      shouldBeRemoved: 1
+      isRemoved: 0
+      Conditions: []
+    - Text: "Warum sollte ich deinen Stock kaufen? Hier liegen \xFCberall welche!"
+      NextDialogueID: 0_c-2
+      shouldBeRemoved: 1
+      isRemoved: 1
+      Conditions: []
+    - Text: "Was soll der Stock denn \xFCberhaupt kosten?"
+      NextDialogueID: 0_c-4
+      shouldBeRemoved: 1
+      isRemoved: 1
+      Conditions: []
     Conditions: []
     Rewards:
     - Type: 0
       Item: {fileID: 11400000, guid: 0eab87081dd9b63409c63ab671fd1fb1, type: 2}
       Amount: 2
       SceneToLoad: 
+      delayToLoad: 0
+      AnimationToPlay: 
+      ObjectToRemove: {fileID: 0}
+      RemovePlayer: 0
+      MoveToPosition: {x: 0, y: 0}
       isGiven: 1
   - SpeakerName: Ameise
     DialogueID: 0_c-4
     Text: "Drei Honigtropfen \u2013 nach aktuellem Kurs. Nat\xFCrlich nur solange
       der Vorrat knapp ist \u2013 was er immer ist."
-    Choices: []
+    Choices:
+    - Text: Wer bist du denn?
+      NextDialogueID: 0_c-1
+      shouldBeRemoved: 1
+      isRemoved: 0
+      Conditions: []
+    - Text: "Warum sollte ich deinen Stock kaufen? Hier liegen \xFCberall welche!"
+      NextDialogueID: 0_c-2
+      shouldBeRemoved: 1
+      isRemoved: 0
+      Conditions: []
+    - Text: Das versteh ich alles nicht. Wieso genau ist der Stock jetzt so wertvoll?
+        Nur, weil du es behauptest?
+      NextDialogueID: 0_c-3
+      shouldBeRemoved: 1
+      isRemoved: 0
+      Conditions: []
     Conditions: []
     Rewards: []

@@ -34,7 +34,12 @@ MonoBehaviour:
     DialogueID: 0_c-1
     Text: "Ich bin Herbert, B\xFCrgermeister dieses bescheidenen Hummeldorfes. Diese
       Begr\xFC\xDFung eben tut mir leid, wir sind alle ein bisschen aufgebracht..."
-    Choices: []
+    Choices:
+    - Text: Was ist denn hier los?
+      NextDialogueID: 1
+      shouldBeRemoved: 0
+      isRemoved: 0
+      Conditions: []
     Conditions: []
     Rewards: []
   - SpeakerName: Herbert
@@ -67,7 +72,19 @@ MonoBehaviour:
     Text: "Ach, nur unser gesamter Jahresertrag, der dazu dienen sollte, unsere K\xF6nigin
       \xFCber den Winter zu bringen! Wir dachten eigentlich, dort unten in den Blumen
       w\xE4re er sicher vor den Wespen versteckt gewesen..."
-    Choices: []
+    Choices:
+    - Text: Wieso zahlt ihr es diesen Wespen nicht einfach heim? Euren Honig klauen,
+        das geht ja mal gar nicht!
+      NextDialogueID: 1_c-2
+      shouldBeRemoved: 1
+      isRemoved: 0
+      Conditions: []
+    - Text: "Ich bin auf einer Reise bis zum Rand des Waldes und in die Lande dahinter.
+        K\xF6nnt ihr mir helfen?"
+      NextDialogueID: 1_c-3
+      shouldBeRemoved: 0
+      isRemoved: 0
+      Conditions: []
     Conditions: []
     Rewards: []
   - SpeakerName: Herbert
@@ -75,7 +92,18 @@ MonoBehaviour:
     Text: "Das haben wir schon oft genug selbst versucht, aber der Weg nach oben
       ist streng bewacht und alle T\xFCren verschlossen... man m\xFCsste schon zaubern
       k\xF6nnen, um unbeschadet bis aufs Dach des Wespennests zu kommen."
-    Choices: []
+    Choices:
+    - Text: "Was denn f\xFCr Honigreserven?"
+      NextDialogueID: 1_c-1
+      shouldBeRemoved: 1
+      isRemoved: 0
+      Conditions: []
+    - Text: "Ich bin auf einer Reise bis zum Rand des Waldes und in die Lande dahinter.
+        K\xF6nnt ihr mir helfen?"
+      NextDialogueID: 1_c-3
+      shouldBeRemoved: 0
+      isRemoved: 0
+      Conditions: []
     Conditions: []
     Rewards: []
   - SpeakerName: Herbert
@@ -94,8 +122,8 @@ MonoBehaviour:
     Rewards: []
   - SpeakerName: Herbert
     DialogueID: 2
-    Text: "Viel gl\xFCck da drinnen, Magier. Moege ihr Nest fallen und ihre ganze
-      gattung mit ihnen."
+    Text: "Viel Gl\xFCck da drinnen, Magier. M\xF6ge ihr Nest fallen und ihre ganze
+      Gattung mit ihnen."
     Choices: []
     Conditions: []
     Rewards: []
