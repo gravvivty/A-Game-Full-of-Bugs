@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 384a265848b16944398aef10af9d574f
+guid: 83b595a6596235145ad149b6d12afaab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2787353729638097984
-    second: Dialogoptionn_neu_0
+      213: -4833546975165017560
+    second: Element 70_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,11 +48,11 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 150
-  spriteBorder: {x: 278, y: 94, z: 293, w: 105}
+  spriteBorder: {x: 262, y: 81, z: 208, w: 135}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dialogoptionn_neu_0
+      name: Element 70_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cb9f890d845159d0800000000000000
-      internalID: -2787353729638097984
+      spriteID: 8221024a2aacbecb0800000000000000
+      internalID: -4833546975165017560
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Dialogoptionn_neu_0: -2787353729638097984
+      Element 70_0: -4833546975165017560
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

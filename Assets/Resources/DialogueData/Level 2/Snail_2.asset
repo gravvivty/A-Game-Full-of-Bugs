@@ -18,7 +18,7 @@ MonoBehaviour:
     Text: "WOOHOOO! Jetzt geht die Post ab! Vollgas, Baby! Halt dich gut fest, ich
       bring dich schneller ans Ziel, als du \u201CKapitalismus\u201D sagen kannst!\u201C"
     Choices:
-    - Text: Na dann los
+    - Text: Na dann los.
       NextDialogueID: 0_c-1
       shouldBeRemoved: 0
       isRemoved: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
     Rewards: []
   - SpeakerName: Schnecke
     DialogueID: 0_c-1
-    Text: AUF GEHTS
+    Text: AUF GEHTS!
     Choices: []
     Conditions: []
     Rewards:

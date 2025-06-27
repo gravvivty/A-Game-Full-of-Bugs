@@ -59,7 +59,7 @@ MonoBehaviour:
   - SpeakerName: Omi
     DialogueID: 0_c-3
     Text: "HA! DU, ein Magier? HAHAHAHA! Na gut, dann zauber doch mal was, oh gro\xDFer
-      Dieter!"
+      Buzz!"
     Choices: []
     Conditions: []
     Rewards: []
