@@ -26,12 +26,6 @@ TextureImporter:
   - first:
       213: 7108889453979230484
     second: nest_foreground_7
-  - first:
-      213: -9164831701719011470
-    second: nest_foreground_8
-  - first:
-      213: -3425891089082502101
-    second: nest_foreground_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -175,9 +169,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1003
-        width: 159
-        height: 322
+        y: 662
+        width: 1578
+        height: 663
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +190,10 @@ TextureImporter:
       name: nest_foreground_3
       rect:
         serializedVersion: 2
-        x: 685
-        y: 676
-        width: 139
-        height: 256
+        x: 2302
+        y: 911
+        width: 1538
+        height: 171
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +212,10 @@ TextureImporter:
       name: nest_foreground_4
       rect:
         serializedVersion: 2
-        x: 812
-        y: 662
-        width: 100
-        height: 270
+        x: 0
+        y: 0
+        width: 497
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,10 +234,10 @@ TextureImporter:
       name: nest_foreground_5
       rect:
         serializedVersion: 2
-        x: 881
-        y: 766
-        width: 163
-        height: 164
+        x: 1562
+        y: 0
+        width: 670
+        height: 272
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,10 +256,10 @@ TextureImporter:
       name: nest_foreground_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2565
         y: 0
-        width: 497
-        height: 326
+        width: 451
+        height: 307
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,50 +278,6 @@ TextureImporter:
       name: nest_foreground_7
       rect:
         serializedVersion: 2
-        x: 1562
-        y: 0
-        width: 670
-        height: 272
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 411e3fb3b49d7a260800000000000000
-      internalID: 7108889453979230484
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nest_foreground_8
-      rect:
-        serializedVersion: 2
-        x: 2565
-        y: 0
-        width: 451
-        height: 307
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27facc8ef1affc080800000000000000
-      internalID: -9164831701719011470
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nest_foreground_9
-      rect:
-        serializedVersion: 2
         x: 3274
         y: 0
         width: 478
@@ -340,8 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b24bf04a43ac470d0800000000000000
-      internalID: -3425891089082502101
+      spriteID: 411e3fb3b49d7a260800000000000000
+      internalID: 7108889453979230484
       vertices: []
       indices: 
       edges: []
@@ -368,8 +318,6 @@ TextureImporter:
       nest_foreground_5: -6875622715637899836
       nest_foreground_6: 2865148940892961721
       nest_foreground_7: 7108889453979230484
-      nest_foreground_8: -9164831701719011470
-      nest_foreground_9: -3425891089082502101
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
