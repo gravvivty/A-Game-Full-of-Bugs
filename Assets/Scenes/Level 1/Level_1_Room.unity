@@ -980,7 +980,7 @@ PrefabInstance:
       objectReference: {fileID: 2595157172694635225}
     - target: {fileID: 4071542073435890612, guid: 0b2ab6498bb791d46b80e6574e66209d, type: 3}
       propertyPath: valueAboveGround
-      value: -30
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 4071542073435890612, guid: 0b2ab6498bb791d46b80e6574e66209d, type: 3}
       propertyPath: minDistanceToInteractable
@@ -1107,8 +1107,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sound
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0927eda8cf602c045a46c0d2cd6e6ebd, type: 2}
-  m_sharedMaterial: {fileID: -3814993937018713165, guid: 0927eda8cf602c045a46c0d2cd6e6ebd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b0bff85775dbe844ea56a83857f38cd5, type: 2}
+  m_sharedMaterial: {fileID: 625379189284010697, guid: b0bff85775dbe844ea56a83857f38cd5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

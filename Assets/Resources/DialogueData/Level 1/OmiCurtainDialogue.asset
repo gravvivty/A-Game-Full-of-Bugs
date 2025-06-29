@@ -20,7 +20,7 @@ MonoBehaviour:
     - Text: Ach, ich renoviere nur. Ich brauch dringend einen moderneren Look.
       NextDialogueID: 0_c-1
       shouldBeRemoved: 1
-      isRemoved: 0
+      isRemoved: 1
       Conditions: []
     Conditions: []
     Rewards: []
@@ -31,13 +31,13 @@ MonoBehaviour:
     - Text: "Der W\xE4chter vom Tor wollte mir die Vorh\xE4nge schon abkaufen. Wenn
         du sie auch willst, solltest du ihn wohl besser zuerst ausschalten."
       NextDialogueID: 0_c-2
-      shouldBeRemoved: 1
+      shouldBeRemoved: 0
       isRemoved: 1
       Conditions: []
     - Text: Ich habe ein magisches Artefakt gefunden und mache mich jetzt als Magier
         auf den Weg ins Unbekannte, also brauche ich sie nicht mehr
       NextDialogueID: 0_c-3
-      shouldBeRemoved: 1
+      shouldBeRemoved: 0
       isRemoved: 0
       Conditions:
       - Type: 0
@@ -84,7 +84,6 @@ MonoBehaviour:
       RemovePlayer: 0
       MoveToPosition: {x: 0, y: 0}
       isGiven: 0
-      EndDialogue: 
   - SpeakerName: Omi
     DialogueID: 0_c-2
     Text: "Holder? Das glaube ich nicht. Der hat sich doch gestern neue Vorh\xE4nge

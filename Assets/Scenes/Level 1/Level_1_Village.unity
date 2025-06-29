@@ -652,8 +652,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sound
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0927eda8cf602c045a46c0d2cd6e6ebd, type: 2}
-  m_sharedMaterial: {fileID: -3814993937018713165, guid: 0927eda8cf602c045a46c0d2cd6e6ebd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b0bff85775dbe844ea56a83857f38cd5, type: 2}
+  m_sharedMaterial: {fileID: 625379189284010697, guid: b0bff85775dbe844ea56a83857f38cd5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8074,6 +8074,5 @@ SceneRoots:
   - {fileID: 666132079}
   - {fileID: 346437671}
   - {fileID: 2019475370}
-  - {fileID: 343950791}
   - {fileID: 22635992}
   - {fileID: 6915464755486653547}
