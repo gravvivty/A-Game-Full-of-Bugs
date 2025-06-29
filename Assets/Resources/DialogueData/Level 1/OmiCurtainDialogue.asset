@@ -20,7 +20,7 @@ MonoBehaviour:
     - Text: Ach, ich renoviere nur. Ich brauch dringend einen moderneren Look.
       NextDialogueID: 0_c-1
       shouldBeRemoved: 1
-      isRemoved: 1
+      isRemoved: 0
       Conditions: []
     - Text: "Der W\xE4chter vom Tor wollte mir die Vorh\xE4nge schon abkaufen. Wenn
         du sie auch willst, solltest du ihn wohl besser zuerst ausschalten."
@@ -67,7 +67,18 @@ MonoBehaviour:
       isRemoved: 0
       Conditions: []
     Conditions: []
-    Rewards: []
+    Rewards:
+    - Type: 5
+      Item: {fileID: 0}
+      Amount: 0
+      SceneToLoad: 
+      delayToLoad: 2000
+      AnimationToPlay: 
+      ObjectToRemove: {fileID: 0}
+      RemovePlayer: 0
+      MoveToPosition: {x: 0, y: 0}
+      isGiven: 0
+      EndDialogue: 
   - SpeakerName: Omi
     DialogueID: 0_c-2
     Text: "Holder? Das glaube ich nicht. Der hat sich doch gestern neue Vorh\xE4nge

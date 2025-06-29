@@ -115,7 +115,7 @@ MonoBehaviour:
     - Text: "Deal! Ihr habt Gl\xFCck, an einen waschechten Magier geraten zu sein.
         Ich werde dieses Wespennest in Schutt und Asche legen, das schw\xF6re ich!"
       NextDialogueID: 2
-      shouldBeRemoved: 1
+      shouldBeRemoved: 0
       isRemoved: 0
       Conditions: []
     Conditions: []

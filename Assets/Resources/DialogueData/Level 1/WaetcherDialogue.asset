@@ -20,7 +20,7 @@ MonoBehaviour:
     - Text: "Beseite, W\xE4chter! Ich verlasse nun das K\xE4ferdorf."
       NextDialogueID: 0_c-1
       shouldBeRemoved: 1
-      isRemoved: 0
+      isRemoved: 1
       Conditions: []
     - Text: "Vergiss es, du bist meiner Worte eh nicht w\xFCrdig."
       NextDialogueID: 0_c-2
@@ -46,4 +46,14 @@ MonoBehaviour:
     Text: Na der Grille sei Dank.
     Choices: []
     Conditions: []
-    Rewards: []
+    Rewards:
+    - Type: 5
+      Item: {fileID: 0}
+      Amount: 0
+      SceneToLoad: 
+      delayToLoad: 0
+      AnimationToPlay: 
+      ObjectToRemove: {fileID: 0}
+      RemovePlayer: 0
+      MoveToPosition: {x: 0, y: 0}
+      isGiven: 0
