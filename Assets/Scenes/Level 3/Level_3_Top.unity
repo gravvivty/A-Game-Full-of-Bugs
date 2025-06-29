@@ -1628,6 +1628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConfirmPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 180845526557420487, guid: e35019006d68ca04db01475c72f09f5b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 733104703194858583, guid: e35019006d68ca04db01475c72f09f5b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2694,7 +2698,7 @@ Transform:
   m_GameObject: {fileID: 998065300}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.5793457, y: -4.5553765, z: 0}
+  m_LocalPosition: {x: -5.497, y: -4.528, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3100,7 +3104,7 @@ Transform:
   m_GameObject: {fileID: 1052507778}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13, y: 1, z: 0}
+  m_LocalPosition: {x: -0.018, y: 0.073, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3159,8 +3163,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.73999995, y: 2.79}
-    newSize: {x: 0.73999995, y: 2.79}
+    oldSize: {x: 38.399998, y: 21.599998}
+    newSize: {x: 38.399998, y: 21.599998}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -3211,12 +3215,12 @@ SpriteRenderer:
   m_SortingLayerID: 1234456679
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2140339366529452154, guid: 864c271dd5f2efe449973b90acdf6af8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a380f608ad5f8b4690e033f1ee51c32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.73999995, y: 2.79}
+  m_Size: {x: 38.399998, y: 21.599998}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
