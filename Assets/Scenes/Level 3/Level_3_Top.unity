@@ -2456,7 +2456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 575959457300682301, guid: 2518b93090d60414683eca98d39ce548, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1400
+      value: 770
       objectReference: {fileID: 0}
     - target: {fileID: 575959457300682301, guid: 2518b93090d60414683eca98d39ce548, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2523,8 +2523,16 @@ PrefabInstance:
       value: 6.149536
       objectReference: {fileID: 0}
     - target: {fileID: 7339425311807649614, guid: 2518b93090d60414683eca98d39ce548, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 76.300156
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339425311807649614, guid: 2518b93090d60414683eca98d39ce548, type: 3}
       propertyPath: m_SizeDelta.y
       value: 70.0005
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339425311807649614, guid: 2518b93090d60414683eca98d39ce548, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.8500977
       objectReference: {fileID: 0}
     - target: {fileID: 7339425311807649614, guid: 2518b93090d60414683eca98d39ce548, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3015,6 +3023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6680869303689675213, guid: 4e472b7da8c39164ca06e00da344b36e, type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e467a8decc910dc429b88ba03f07cd80, type: 3}
     - target: {fileID: 7120116205162137649, guid: 4e472b7da8c39164ca06e00da344b36e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.2815408

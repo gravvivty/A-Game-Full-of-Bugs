@@ -64,7 +64,7 @@ MonoBehaviour:
     DialogueID: 0_c-3
     Text: "Bro, du h\xE4ngst noch in der K\xE4ferwelt fest! Hier, das hier bringt
       dein Mindset auf\u2019s n\xE4chste Level. Ein echter Geheimtipp unter Investoren.
-      Aber teil es dir gut ein am Anfang!"
+      Aber teil es dir a Anfang gut ein!"
     Choices: []
     Conditions: []
     Rewards:
@@ -72,6 +72,11 @@ MonoBehaviour:
       Item: {fileID: 11400000, guid: 0eab87081dd9b63409c63ab671fd1fb1, type: 2}
       Amount: 2
       SceneToLoad: 
+      delayToLoad: 0
+      AnimationToPlay: 
+      ObjectToRemove: {fileID: 0}
+      RemovePlayer: 0
+      MoveToPosition: {x: 0, y: 0}
       isGiven: 1
   - SpeakerName: Ameise
     DialogueID: 0_c-4

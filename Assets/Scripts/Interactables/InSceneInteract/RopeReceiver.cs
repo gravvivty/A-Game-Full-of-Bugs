@@ -11,8 +11,16 @@ namespace Project.Interactable.InSceneInteract
     {
         public GameObject tiedRope;
         public GameObject cutRope;
+        
         public override bool TryUseItem(ItemData draggedItem)
         {
+            // Prevent re-cutting if already cut
+            if (PlayerPrefs.GetInt("isRopeCut", 0) == 1)
+            {
+                Debug.Log("Rope already cut. Ignoring interaction.");
+                return false;
+            }
+
             // Check for a valid combination
             if (draggedItem.CanCombine(itemRepresentation.itemID))
             {
@@ -24,16 +32,18 @@ namespace Project.Interactable.InSceneInteract
                 {
                     itemRepresentation = null;
                     cutRope.SetActive(true);
+                    Destroy(tiedRope);
+                    this.enabled = false;
                     PlayerPrefs.SetInt("isRopeCut", 1);
                     PlayerPrefs.Save();
 
-                    Destroy(tiedRope);
                     return true;
                 }
-                // CUSTOM LOGIC ----
+
                 Debug.Log("Can't use this item on the Rope.");
                 FindFirstObjectByType<CustomAudioManager>().Play("wrong");
             }
+
             return false;
         }
     }
