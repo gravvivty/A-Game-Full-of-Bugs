@@ -11,6 +11,7 @@ namespace Project.Helper
         [SerializeField] private Texture2D doorCursor;
         [SerializeField] private Texture2D dialogueCursor;
         [SerializeField] private Texture2D putCursor;
+        [SerializeField] private Texture2D ventCursor;
         [SerializeField] private Vector2 hotspot = Vector2.zero;
 
         private void Awake()
@@ -32,20 +33,25 @@ namespace Project.Helper
         {
             Cursor.SetCursor(doorCursor, hotspot, CursorMode.Auto);
         }
-        
+
         public void SetDialogueCursor()
         {
             Cursor.SetCursor(dialogueCursor, hotspot, CursorMode.Auto);
         }
-        
+
         public void SetGrabCursor()
         {
             Cursor.SetCursor(grabCursor, hotspot, CursorMode.Auto);
         }
-        
+
         public void SetPutCursor()
         {
             Cursor.SetCursor(putCursor, hotspot, CursorMode.Auto);
+        }
+
+        public void SetVentCursor()
+        {
+            Cursor.SetCursor(ventCursor, hotspot, CursorMode.Auto);
         }
     }
 }

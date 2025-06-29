@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a767e4dc89c5745a5ebd6ea6ecaec4, type: 3}
+  m_Name: Hummel
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - SpeakerName: '?'
+    DialogueID: 0
+    Text: "...das ist eine Trag\xF6die! Diesmal sind sie wirklich zu weit gegangen.
+      Ich w\xFCnschte, wir k\xF6nnt... oh, hallo, Fremder!"
+    Choices:
+    - Text: Wer seid ihr denn?
+      NextDialogueID: 0_c-1
+      shouldBeRemoved: 1
+      isRemoved: 1
+      Conditions: []
+    - Text: Was ist denn hier los?
+      NextDialogueID: 1
+      shouldBeRemoved: 0
+      isRemoved: 0
+      Conditions: []
+    Conditions: []
+    Rewards: []
+  - SpeakerName: Herbert
+    DialogueID: 0_c-1
+    Text: "Ich bin Herbert, B\xFCrgermeister dieses bescheidenen Hummeldorfes. Diese
+      Begr\xFC\xDFung eben tut mir leid, wir sind alle ein bisschen aufgebracht..."
+    Choices: []
+    Conditions: []
+    Rewards: []
+  - SpeakerName: Herbert
+    DialogueID: 1
+    Text: "Es ist furchtbar! Jemand hat unsere seltenen Honigreserven gestohlen!
+      Das waren ganz sicher diese verdammten Wespen. Dieses Pack pl\xFCndert doch
+      alles, was s\xFC\xDF ist!"
+    Choices:
+    - Text: "Was denn f\xFCr Honigreserven?"
+      NextDialogueID: 1_c-1
+      shouldBeRemoved: 1
+      isRemoved: 1
+      Conditions: []
+    - Text: Wieso zahlt ihr es diesen Wespen nicht einfach heim? Euren Honig klauen,
+        das geht ja mal gar nicht!
+      NextDialogueID: 1_c-2
+      shouldBeRemoved: 1
+      isRemoved: 1
+      Conditions: []
+    - Text: "Ich bin auf einer Reise bis zum Rand des Waldes und in die Lande dahinter.
+        K\xF6nnt ihr mir helfen?"
+      NextDialogueID: 1_c-3
+      shouldBeRemoved: 0
+      isRemoved: 0
+      Conditions: []
+    Conditions: []
+    Rewards: []
+  - SpeakerName: Herbert
+    DialogueID: 1_c-1
+    Text: "Ach, nur unser gesamter Jahresertrag, der dazu dienen sollte, unsere K\xF6nigin
+      \xFCber den Winter zu bringen! Wir dachten eigentlich, dort unten in den Blumen
+      w\xE4re er sicher vor den Wespen versteckt gewesen..."
+    Choices: []
+    Conditions: []
+    Rewards: []
+  - SpeakerName: Herbert
+    DialogueID: 1_c-2
+    Text: "Das haben wir schon oft genug selbst versucht, aber der Weg nach oben
+      ist streng bewacht und alle T\xFCren verschlossen... man m\xFCsste schon zaubern
+      k\xF6nnen, um unbeschadet bis aufs Dach des Wespennests zu kommen."
+    Choices: []
+    Conditions: []
+    Rewards: []
+  - SpeakerName: Herbert
+    DialogueID: 1_c-3
+    Text: "Ich schlag dir einen Deal vor, K\xE4fer: wenn du uns hilfst, Rache an
+      diesen diebischen Wespen zu nehmen, fliegen wir dich zum Dank aus dem Wald
+      hinaus. Was sagst du?"
+    Choices:
+    - Text: "Deal! Ihr habt Gl\xFCck, an einen waschechten Magier geraten zu sein.
+        Ich werde dieses Wespennest in Schutt und Asche legen, das schw\xF6re ich!"
+      NextDialogueID: 2
+      shouldBeRemoved: 1
+      isRemoved: 0
+      Conditions: []
+    Conditions: []
+    Rewards: []
+  - SpeakerName: Herbert
+    DialogueID: 2
+    Text: "Viel gl\xFCck da drinnen, Magier. Moege ihr Nest fallen und ihre ganze
+      gattung mit ihnen."
+    Choices: []
+    Conditions: []
+    Rewards: []

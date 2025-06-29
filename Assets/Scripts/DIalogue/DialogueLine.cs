@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Project.Inventory;
 using UnityEngine;
 
 namespace Project.Dialogue.Data
@@ -10,8 +11,9 @@ namespace Project.Dialogue.Data
     [Serializable]
     public class DialogueLine
     {
+        public string SpeakerName;
         public string DialogueID;
-        public string Text;
+        [TextArea] public string Text;
         public List<DialogueChoice> Choices;
         public List<DialogueCondition> Conditions;
         public List<DialogueReward> Rewards;
@@ -25,6 +27,8 @@ namespace Project.Dialogue.Data
     {
         public string Text;
         public string NextDialogueID;
+        public bool shouldBeRemoved = true;
+        [HideInInspector] public bool isRemoved = false;
         public List<DialogueCondition> Conditions;
     }
 
@@ -45,8 +49,15 @@ namespace Project.Dialogue.Data
     public class DialogueReward
     {
         public RewardType Type;
-        public string ItemID;
+        public ItemData Item;
         public int Amount;
+        public string SceneToLoad;
+        public float delayToLoad;
+        public string AnimationToPlay;
+        public GameObject ObjectToRemove;
+        public bool RemovePlayer = false;
+        public Vector2 MoveToPosition;
+        public bool isGiven = false;
     }
 
     /// <summary>
@@ -64,6 +75,9 @@ namespace Project.Dialogue.Data
     public enum RewardType
     {
         Item,
-        Quest
+        SceneToLoad,
+        AnimationToPlay,
+        ObjectToRemove,
+        MoveToAnotherSpot
     }
 }

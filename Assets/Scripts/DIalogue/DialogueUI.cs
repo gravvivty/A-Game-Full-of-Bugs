@@ -15,10 +15,11 @@ namespace Project.Dialogue
     {
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private Transform choicesContainer;
+        [SerializeField] private Button choiceButtonPrefab;
 
         public void DisplayDialogue(DialogueLine dialogue)
         {
-            dialogueText.text = dialogue.Text;
+            dialogueText.text = $"{dialogue.SpeakerName}: {dialogue.Text}";
             if (CheckConditions(dialogue.Conditions) == false)
             {
                 Debug.Log("Dialogue conditions not met, skipping dialogue.");
@@ -44,38 +45,52 @@ namespace Project.Dialogue
                     if (!CheckChoiceConditions(choices[i])) continue; // Skip this choice if conditions are not met
                 }
 
+                if (choices[i].isRemoved)
+                {
+                    continue;
+                }
+
                 var choice = choices[i];
-                // Create a new GameObject for the button
-                GameObject buttonObj = new GameObject($"Choice Button {i}");
-                buttonObj.transform.SetParent(choicesContainer, false);
-
-                // Add required components
-                Button button = buttonObj.AddComponent<Button>();
-                Image buttonImage = buttonObj.AddComponent<Image>();
-                VerticalLayoutGroup layoutGroup = buttonObj.AddComponent<VerticalLayoutGroup>();
-                // Setup VerticalLayoutGroup
-                layoutGroup.childControlHeight = true;
-                layoutGroup.childControlWidth = true;
-                layoutGroup.childForceExpandHeight = false;
-                layoutGroup.childForceExpandWidth = false;
-                layoutGroup.childAlignment = TextAnchor.UpperLeft;
-                layoutGroup.padding = new RectOffset(25, 25, 25, 25);
-
-                // Create text child object
-                GameObject textObj = new GameObject("Choice Text");
-                textObj.transform.SetParent(buttonObj.transform, false);
-
-                // Add text component
-                TextMeshProUGUI tmpText = textObj.AddComponent<TextMeshProUGUI>();
-                tmpText.text = choice.Text;
-                tmpText.alignment = TextAlignmentOptions.Left;
-                tmpText.fontSize = 35;
-                tmpText.color = Color.black;
-
                 Debug.Log($"Choice {i}: {choice.Text}");
                 int choiceIndex = i;
-                button.onClick.AddListener(() => DialogueManager.Instance.MakeChoice(choiceIndex));
+
+                // Instantiate the choice button from the prefab
+                Button choiceButton = Instantiate(choiceButtonPrefab, choicesContainer);
+                choiceButton.gameObject.transform.SetParent(choicesContainer, false);
+
+                // Configure ContentSizeFitter on the button
+                ContentSizeFitter buttonContentSizeFitter = choiceButton.GetComponent<ContentSizeFitter>();
+                if (buttonContentSizeFitter == null)
+                {
+                    buttonContentSizeFitter = choiceButton.gameObject.AddComponent<ContentSizeFitter>();
+                }
+                buttonContentSizeFitter.verticalFit = ContentSizeFitter.FitMode.MinSize;
+                buttonContentSizeFitter.horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
+
+                // Reset all components to enabled state
+                foreach (var component in choiceButton.GetComponentsInChildren<MonoBehaviour>())
+                {
+                    component.enabled = true;
+                }
+
+                // Configure the text component
+                TextMeshProUGUI textComponent = choiceButton.GetComponentInChildren<TextMeshProUGUI>();
+                textComponent.text = choice.Text;
+
+                // Configure LayoutElement on the text for minimum height calculation
+                LayoutElement textLayoutElement = textComponent.GetComponent<LayoutElement>();
+                if (textLayoutElement == null)
+                {
+                    textLayoutElement = textComponent.gameObject.AddComponent<LayoutElement>();
+                }
+                textLayoutElement.preferredHeight = -1;
+                textLayoutElement.minHeight = textComponent.fontSize + 10;
+
+                choiceButton.onClick.AddListener(() => DialogueManager.Instance.MakeChoice(choiceIndex));
             }
+            Canvas.ForceUpdateCanvases();
+            LayoutRebuilder.ForceRebuildLayoutImmediate(choicesContainer.GetComponent<RectTransform>());
+
         }
 
         public bool CheckChoiceConditions(DialogueChoice dialogueChoice)

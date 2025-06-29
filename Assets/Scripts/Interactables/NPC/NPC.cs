@@ -3,35 +3,43 @@ using UnityEngine;
 using Project.Dialogue;
 using Project.Dialogue.Data;
 using UnityEngine.AI;
+using Project.Audio;
 
-namespace Project.Interactable.NPC
+namespace Project.Interactable.NPCs
 {
     public class NPC : Interactables
     {
-        [SerializeField] private DialogueData dialogueData;
-        [SerializeField] private string initialDialogueID;
+        [SerializeField] public DialogueData dialogueData;
+        [SerializeField] public string initialDialogueID;
         [SerializeField] private Animator animator;
-        
+
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         protected override void Start()
         {
             base.Start();
         }
-        
+
         public void PlayTalkingAnimation()
         {
             if (animator != null)
             {
                 animator.SetBool("Talking", true);
+                FindFirstObjectByType<CustomAudioManager>().Play("talking");
             }
         }
-        
+
         public void StopTalkingAnimation()
         {
             if (animator != null)
             {
+                FindFirstObjectByType<CustomAudioManager>().Stop("talking");
                 animator.SetBool("Talking", false);
             }
+        }
+
+        public void SetDialogueData(DialogueData data)
+        {
+            dialogueData = data;
         }
 
         // Update is called once per frame

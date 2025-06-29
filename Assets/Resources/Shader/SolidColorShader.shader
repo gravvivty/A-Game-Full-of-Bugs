@@ -2,7 +2,7 @@ Shader "Unlit/SolidColorShader"
 {
     Properties {
         _MainTex ("Sprite Texture", 2D) = "white" {}
-        _Color ("Solid Color", Color) = (0, 1, 0, 1) // Green
+        _Color ("Solid Color", Color) = (0.384, 0.753, 0.659, 1) // Cyan (98/255, 192/255, 168/255, 1)
     }
     SubShader {
         Tags { "Queue"="Transparent" "RenderType"="Transparent" }

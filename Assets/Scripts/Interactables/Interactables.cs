@@ -14,7 +14,6 @@ namespace Project.Interactable
         private SpriteOutline spriteOutline;
         private bool isHighlighted = false;
         private bool waitingForPlayerToGetClose = false;
-        private float minInteractionDistance = 5f;
         private GameObject hoveredObject;
 
         protected virtual void Start()
@@ -91,6 +90,9 @@ namespace Project.Interactable
                     case "Put":
                         CursorManager.Instance.SetPutCursor();
                         break;
+                    case "Vent":
+                        CursorManager.Instance.SetVentCursor();
+                        break;
                     default:
                         CursorManager.Instance.SetNormalCursor();
                         break;
@@ -103,7 +105,7 @@ namespace Project.Interactable
 
             hoveredObject = null;
         }
-        
+
         /// <summary>
         /// Allows forcing an interaction immediately, bypassing proximity logic.
         /// </summary>

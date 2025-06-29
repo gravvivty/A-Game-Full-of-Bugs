@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Project.Helper
 {
@@ -16,14 +17,19 @@ namespace Project.Helper
         /// </summary>
         public GameObject GetGameObject()
         {
+            if (EventSystem.current.IsPointerOverGameObject()) 
+            {
+                return null;
+            }
+            
             Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D[] hits = Physics2D.RaycastAll(mousePosition, Vector2.zero);
 
             foreach (RaycastHit2D hit in hits)
             {
-                if (hit.collider != null && !hit.collider.CompareTag("Ground"))
+                if (!hit.collider.CompareTag("Ground"))
                 {
-                    return hit.collider.gameObject;
+                    return hit.collider?.gameObject;
                 }
             }
 
