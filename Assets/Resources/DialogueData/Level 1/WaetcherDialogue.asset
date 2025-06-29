@@ -32,8 +32,13 @@ MonoBehaviour:
   - SpeakerName: Holder
     DialogueID: 0_c-1
     Text: "Vergiss es, Trottel. Ich verlasse meinen Posten nur in Notf\xE4llen wie
-      Br\xE4nden, und solange ich hier stehe, kommt niemand raus."
-    Choices: []
+      Br\xE4nde und solange ich hier stehte, kommt niemand raus."
+    Choices:
+    - Text: "Vergiss es, du bist meiner Worte eh nicht w\xFCrdig."
+      NextDialogueID: 0_c-2
+      shouldBeRemoved: 0
+      isRemoved: 0
+      Conditions: []
     Conditions: []
     Rewards: []
   - SpeakerName: Holder
@@ -41,4 +46,14 @@ MonoBehaviour:
     Text: Na der Grille sei Dank.
     Choices: []
     Conditions: []
-    Rewards: []
+    Rewards:
+    - Type: 5
+      Item: {fileID: 0}
+      Amount: 0
+      SceneToLoad: 
+      delayToLoad: 0
+      AnimationToPlay: 
+      ObjectToRemove: {fileID: 0}
+      RemovePlayer: 0
+      MoveToPosition: {x: 0, y: 0}
+      isGiven: 0
