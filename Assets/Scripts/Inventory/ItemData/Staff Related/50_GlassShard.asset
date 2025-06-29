@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Magisches Relikt
   itemID: 50
   description: "Ein magisches Relikt aus einer fernen Welt . . . \nDer Dorf\xE4lteste
-    nannte es \"Glas\"."
+    nannte es \"Spiegel\"."
   icon: {fileID: 3891023795430930065, guid: 033f5b020970eae4c9c3635a9179173f, type: 3}
   possibleCombinations:
   - otherItemID: 52
