@@ -51,7 +51,7 @@ As part of this group project, my primary responsibilities included:
 
 [Scenes](Assets/Scenes) - All Unity scenes making up game levels, menus, and cutscenes.
 
-[Scripts](#code-structure) - Source code files implementing all game logic and systems.
+[Scripts](#scripts) - Source code files implementing all game logic and systems.
 
 [Prefabs](Assets/Prefabs) - Unity prefabs for re-usable game objects like UI elements, environment props, and interactive objects.
 
