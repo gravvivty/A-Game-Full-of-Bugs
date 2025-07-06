@@ -1,4 +1,4 @@
-# A Game Full of Bugs - Y3 GamesDev
+# A Game Full of Bugs - Y3 Game Design
 
 ###### Author: Steven Gayer (gravvivty)
 
@@ -17,7 +17,7 @@ Players navigate bug-themed levels, solve environmental puzzles, and manage an i
 </body>
 
 ---
-
+The team's decision was to devellop the game in German therefore only supporting said language.
 #### [Game Download / Demo](YOUR_RELEASE_URL_HERE)
 
 ---
