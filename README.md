@@ -17,7 +17,7 @@ Players navigate bug-themed levels, solve environmental puzzles, and manage an i
 </body>
 
 ---
-The team's decision was to devellop the game in German therefore only supporting said language.
+The team's decision was to develop the game in German therefore only supporting said language.
 #### [Game Download / Demo](https://github.com/gravvivty/A-Game-Full-of-Bugs/releases/tag/v1.0)
 
 ---
