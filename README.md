@@ -45,17 +45,15 @@ As part of this group project, my primary responsibilities included:
 
 ### Folder Structure
 
-[Animation](Assets/Animation) - Contains sprites, textures, and visual assets used throughout the game.
+[Animation](Assets/Animations) - Contains sprites, textures, and visual assets used throughout the game.
 
-[Audio](Audio) - Contains sound effects and background music used in-game.
+[Sound](Assets/Sound) - Contains sound effects and background music used in-game.
 
-[Scenes](Scenes) - All Unity scenes making up game levels, menus, and cutscenes.
+[Scenes](Assets/Scenes) - All Unity scenes making up game levels, menus, and cutscenes.
 
 [Scripts](#code-structure) - Source code files implementing all game logic and systems.
 
-[Prefabs](Prefabs) - Unity prefabs for re-usable game objects like UI elements, environment props, and interactive objects.
-
-[Docs](Docs) - Documentation related to the project, including design documents and implementation notes.
+[Prefabs](Assets/Prefabs) - Unity prefabs for re-usable game objects like UI elements, environment props, and interactive objects.
 
 ---
 
