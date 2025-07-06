@@ -59,45 +59,21 @@ As part of this group project, my primary responsibilities included:
 
 ---
 
-### Code Structure
-
 ***
 
 #### Table of Contents
 
-1. [Editor](#editor)
-2. [Packages](#packages)
-3. [Scenes](#scenes)
-4. [Scripts](#scripts)
+1. [Scenes](#scenes)
+2. [Scripts](#scripts)
 
-    1. [Gameplay](#gameplay)
-    2. [UI](#ui)
-    3. [Inventory](#inventory)
-    4. [Systems](#systems)
-    5. [Utils](#utils)
+    1. [Audio](#audio)
+    2. [Dialogue](#dialogue)
+    3. [Helper](#helper)
+    4. [Interactable](#interactable)
+    5. [Vent System](#vent-system)
+    6. [Inventory](#inventory)
 
 ---
-
-### Editor
-
-<body>
-
-> Contains custom Unity Editor tools and scripts created to improve development workflow and debugging. Examples include editor windows for managing level elements or automating repetitive tasks.
-</body>
-
-***
-
-### Packages
-
-<body>
-
-> The project makes use of Unity packages and third-party assets to enhance visuals and workflow. Notable examples:
-
-- [TextMeshPro (TMP)](https://docs.unity3d.com/Manual/com.unity.textmeshpro.html) — Advanced text rendering used throughout the game UI.
-- [Cinemachine](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.6/manual/index.html) — Used to manage dynamic camera movements, particularly during cutscenes.
-</body>
-
-***
 
 ### Scenes
 
@@ -105,9 +81,9 @@ As part of this group project, my primary responsibilities included:
 
 > A brief overview of the key scenes in the project:
 
-- **MainMenu** — The game’s entry point, containing UI navigation to start the game, view credits, or exit.
-- **Level_1** (and others) — Core levels featuring platforming, puzzles, and teleport mechanics.
-- **Cutscenes** — Dedicated scenes for narrative events and interactive story sequences.
+- **MainMenu** — The game’s entry point, containing UI navigation to start the game, select a level, or exit.
+- **Level_1_XX** (and others) — Core levels featuring puzzles and the main story of the game.
+- **Cutscenes** — Dedicated scenes for narrative events.
 </body>
 
 ***
@@ -118,37 +94,83 @@ As part of this group project, my primary responsibilities included:
 
 ---
 
-#### Gameplay
+### Audio
 
-- Handles core platforming mechanics.
-- Implements teleport systems allowing seamless level traversal.
-- Manages interactions between player and environmental elements.
+> Scripts related to sound effects and background music management. Handles SFX playback, mute toggling, and persistent audio settings.
 
----
-
-#### UI
-
-- Controls UI canvases and elements like menus, HUD, popups, and dialogues.
-- Manages cutscene overlays and transitions.
+| Script                 | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| **CustomAudioManager** | Plays and stops sound effects by name. Sets up `AudioSource` components for all sounds. |
+| **Sound**              | Serializable class that defines a sound’s name, clip, volume, and loop setting. |
+| **MusicSettings**      | Singleton used to manage global mute state. Interfaces with `CustomMusicManager`. |
+| **CustomMusicManager** | Scene-level music manager. Handles playback, mute toggling, and stores mute state in `PlayerPrefs`. |
 
 ---
 
-#### Inventory
+### Dialogue
 
-- Provides a system to store, manage, and combine items.
-- Drives puzzle mechanics that rely on item usage and combination logic.
+> Scripts responsible for managing dialogue flow, conditions, rewards, and UI. Supports branching conversations, item-based conditions, and scene-linked rewards.
+
+| Script                 | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| **DialogueManager**    | Central controller for dialogue logic. Handles dialogue flow, choices, and applying rewards. |
+| **DialogueUI**         | Displays dialogue lines and choices. Dynamically creates buttons based on dialogue data. |
+| **DialogueData**       | A `ScriptableObject` containing a list of dialogue lines. Used to start and reference conversations. |
+| **DialogueLine**       | Represents a single line of dialogue with speaker, text, choices, and conditions. |
+| **DialogueChoice**     | A selectable option in dialogue that may lead to another dialogue line. Can have conditions. |
+| **DialogueCondition**  | Defines conditions for dialogue (e.g. has specific item). |
+| **DialogueReward**     | Triggers events or rewards after dialogue (e.g. give item, load scene, play animation). |
+| **SimpleDialogueBox**  | A basic dialogue box for testing, showing static lines on mouse click. |
+| **ConditionType / RewardType** | Enums that define valid condition and reward types used in dialogue flow. |
 
 ---
 
-#### Systems
+### Helper
 
-- Manages global systems such as game state management, audio management, and player preferences.
+> Utility scripts for enhancing interaction, visual feedback, and user input. These scripts assist with raycasting, cursor visuals, and sprite outlining.
+
+| Script              | Description                                                                     |
+|---------------------|---------------------------------------------------------------------------------|
+| **SpriteOutline**   | Adds an outline effect to sprites using a child renderer with a custom shader. |
+| **MouseRaycast**    | Performs 2D raycasts from the mouse to detect objects under the cursor.         |
+| **CursorManager**   | Manages and updates custom mouse cursors based on interaction context.          |
 
 ---
 
-#### Utils
+### Interactable
 
-- Helper functions, extensions, and utilities shared across different systems.
+> Contains the core systems for interactive world objects, including NPCs, item receivers, vents, and interaction feedback. Supports proximity-based interaction, item usage, and contextual cursor behavior.
+
+| Script                   | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| **Interactables**        | Abstract base class for all interactable objects. Handles cursor changes, outlines, and distance-based interaction. |
+| **NPC**                  | Inherits from `Interactables`. Controls NPC dialogue and proximity logic.  |
+| **NPCMovement**          | Moves NPCs toward target positions and adjusts sprite layers for depth.    |
+| **AntReceiver**          | Accepts specific items from the player and shows a temporary UI prompt.    |
+| **FlowerReceiver**       | Handles combining specific items with a flower object. Plays feedback and activates changes. |
+
+### Vent System
+
+> A sub-system under `Interactable` for vent-based teleportation mechanics. Allows players to move between connected vents if conditions are met.
+
+| Script                      | Description                                                                |
+|-----------------------------|----------------------------------------------------------------------------|
+| **VentTeleportSystem**      | Manages vent teleportation. Validates range, handles wasp proximity, and performs movement. |
+| **Vent**                    | An interactable vent entry point. Triggers teleport and plays SFX.         |
+| **VentDestination**         | Defines teleport destination for a connected vent.    
+
+---
+
+### Inventory
+
+> Manages item collection, inventory UI, and item combination logic. Supports drag-and-drop interaction, tooltips, and item usage on world objects.
+
+| Script                 | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| **ItemData**           | `ScriptableObject` that defines item info, icon, and combination logic.     |
+| **InventoryManager**   | Singleton that manages adding, removing, and checking items in the inventory. |
+| **InventorySlotUI**    | Handles drag-and-drop item behavior, combinations, and tooltip display.     |
+| **InventoryUI**        | Controls the inventory panel UI and dynamically updates slots.              |
 
 ---
 
