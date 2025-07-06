@@ -45,7 +45,7 @@ As part of this group project, my primary responsibilities included:
 
 ### Folder Structure
 
-[Art](Art) - Contains sprites, textures, and visual assets used throughout the game.
+[Animation](Assets/Animation) - Contains sprites, textures, and visual assets used throughout the game.
 
 [Audio](Audio) - Contains sound effects and background music used in-game.
 
