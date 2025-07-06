@@ -4,16 +4,12 @@
 
 ###### Project Type: Game Design Coursework
 
-<p align="center">
-<img style="align-content: center" src="YOUR_BANNER_IMAGE_URL_HERE">
-</p>
-
 ---
 
 ### Project Information
 
 <body>
-This repository contains the code and documentation for **A Game Full of Bugs**, a comedic 2D puzzle-platformer developed as part of the Software Engineering module at university.
+This repository contains the code and documentation for *A Game Full of Bugs*, a comedic 2D puzzle-adventure developed as part of the Game Design module at university.
 
 <br><br>
 
@@ -31,7 +27,7 @@ Players navigate bug-themed levels, solve environmental puzzles, and manage an i
 As part of this group project, my primary responsibilities included:
 
 - **Level Layout Design**  
-    - Designed and implemented the level architecture and platform placements for engaging and balanced gameplay.
+    - Designed and implemented the level architecture and platform placements.
 
 - **Teleport Systems**  
     - Developed teleport mechanics enabling players to traverse non-linear level layouts.
@@ -112,7 +108,6 @@ As part of this group project, my primary responsibilities included:
 - **MainMenu** — The game’s entry point, containing UI navigation to start the game, view credits, or exit.
 - **Level_1** (and others) — Core levels featuring platforming, puzzles, and teleport mechanics.
 - **Cutscenes** — Dedicated scenes for narrative events and interactive story sequences.
-- **GameOver** — Displays UI when the player fails a level.
 </body>
 
 ***
@@ -175,11 +170,11 @@ To run the project locally:
 
 <body>
 
-**A Game Full of Bugs** was developed as a team project for the Software Engineering module.
+**A Game Full of Bugs** was developed as a team project for the Game Design module.
 
 > This portfolio repository focuses on my individual contributions, including level design, teleport mechanics, UI systems, in-game cutscenes, and inventory combination systems.
 
-All third-party assets used are credited to their respective authors within the project files and documentation.
+All assets were made within the team.
 </body>
 
 ---
